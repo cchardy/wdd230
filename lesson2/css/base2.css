@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 h2, h3 {
     color: rgb(140, 163, 179);
+    text-align: center;
 }
 
 body {
@@ -45,6 +46,8 @@ main {
     border: 1px solid rgb(43, 120, 172);
     box-shadow: 2px 2px;
     background: azure;
+    max-width: 250px;
+    margin: 0 auto;
 }
 
 
