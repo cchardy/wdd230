@@ -15,9 +15,9 @@ h2 {
 }
 
 body {
-    font-size: 12px;
-    font-family: font-family: 'Tinos', serif;
+    font-size: 1.5rem;
 }
+
 header, main, footer {
     max-width: 750px;
     margin: 0 auto;
@@ -37,6 +37,10 @@ header img {
     width: 100%;
     height: auto;
     
+}
+
+main {
+    font-family: 'Tinos', serif;
 }
 
 footer {
