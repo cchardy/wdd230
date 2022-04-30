@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 }
 
-h2 {
+h2, h3 {
     color: rgb(140, 163, 179);
 }
 
@@ -29,7 +29,7 @@ header {
     padding: 1rem;
     background-color: rgb(140, 163, 179);
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -37,15 +37,16 @@ a:hover {
     color: #c56a1f;
 }
 
-header img {
-    width: 100%;
-    height: auto;
-    
-}
-
 main {
     font-family: 'Tinos', serif;
 }
+
+.design1 {
+    border: 1px solid rgb(43, 120, 172);
+    box-shadow: 2px 2px;
+    background: azure;
+}
+
 
 footer {
     margin: 1rem auto;
