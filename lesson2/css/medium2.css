@@ -8,9 +8,4 @@
     header, main, footer {
         border-radius: 1rem;
     }
-    header img {
-        float: right;
-        border-radius: 1rem;
-    }
-
 }
