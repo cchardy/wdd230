@@ -40,7 +40,7 @@ main {
     font-family: 'Tinos', serif;
 }
 
-.design1, .design2, .design3 {
+design1 {
     border: 1px solid rgb(43, 120, 172);
     padding: 1em;
     border-radius: 1em;
@@ -50,6 +50,12 @@ main {
     margin: 0 auto;
 }
 
+design1header {
+    margin: 1rem auto;
+    border: 1px solid rgb(43, 120, 172);
+    padding: 1rem;
+    background-color: rgb(140, 163, 179);
+}
 
 footer {
     margin: 1rem auto;
