@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(113, 190, 241);
+    text-align: center;
+
+}
+
+h2 {
+    color: rgb(140, 163, 179);
+}
+
+body {
+    font-size: 16px;
+}
+nav, header, main, footer {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    border: 1px solid rgb(113, 190, 241);
+    padding: 1rem;
+    background-color: rgb(140, 163, 179);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 1rem auto;
+    border: 1px solid rgb(113, 190, 241);
+    padding: .5rem;
+    background-color: rgb(140, 163, 179);
+    align-items: center;
+}
