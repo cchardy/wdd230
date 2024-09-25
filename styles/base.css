@@ -5,9 +5,12 @@
 
 h1,h2,h3,h4,h5,h6,p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(113, 190, 241);
+    color: white;
     text-align: center;
+}
 
+h1 {
+    font-size: 4vw;
 }
 
 h2 {
@@ -16,6 +19,7 @@ h2 {
 
 body {
     font-size: 16px;
+
 }
 nav, header, main, footer {
     max-width: 750px;
@@ -38,6 +42,28 @@ header img {
     height: auto;
     border-radius: 16px;
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color:rgb(140, 163, 179);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #f8f40a;
+
+}
+
+.active {
+    color: black;
+}
+
 
 footer {
     margin: 1rem auto;
