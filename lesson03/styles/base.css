@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto auto 1fr auto / auto 1fr auto;
+  }
+  
+  header {
+    background: #f2cc8f;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+
+  nav {
+    background: #E07A5f;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+     
+  main {
+    background: #F4F1DE;
+    grid-column: 1 / 3;
+  }
+  
+  .right-sidebar {
+    background: #81B29A;
+    grid-column: 3 / 4;
+  }
+  
+  footer {
+    background: #3D405B;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
+  
+  .right-sidebar {
+    padding: 2rem;
+  }
+  
