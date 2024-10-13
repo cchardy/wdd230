@@ -1,0 +1,15 @@
+@media (min-width: 840px) {
+   
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    
+    }
