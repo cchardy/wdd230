@@ -3,6 +3,59 @@ body {
     font-family: "Sansita", Ubuntu, sans-serif;
 }
 
+body {
+    font-size: 16px;
+
+}
+
+nav,
+header,
+main,
+footer {
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+header {
+    margin: 1rem auto;
+    border: 1px solid rgb(113, 190, 241);
+    padding: 1rem;
+    background-color: rgb(6, 24, 83);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: rgb(6, 24, 83);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #f8f40a;
+
+}
+
+.active {
+    color: rgb(191, 195, 250);
+}
+
+footer {
+    margin: 1rem auto;
+    border: 1px solid rgb(113, 190, 241);
+    padding: .5rem;
+    background-color: rgb(6, 24, 83);
+    align-items: center;
+}
+
 /* phone or baseline views **************************/
 main {
     max-width: 767px;
