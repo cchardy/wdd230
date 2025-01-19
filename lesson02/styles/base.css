@@ -1,11 +1,12 @@
 body {
     font-size: 16px;
     font-family: "Sansita", Ubuntu, sans-serif;
+    font-color: whitesmoke;
 }
 
 body {
     font-size: 16px;
-
+    font-color: black;
 }
 
 nav,
@@ -54,6 +55,7 @@ footer {
     padding: .5rem;
     background-color: rgb(6, 24, 83);
     align-items: center;
+
 }
 
 .container {
