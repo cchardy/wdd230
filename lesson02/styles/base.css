@@ -7,6 +7,15 @@
 
 }
 
+nav,
+header,
+footer {
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 16px;
+    color: whitesmoke;
+}
+
 main {
     font-size: 16px;
     display: flex;
@@ -18,16 +27,6 @@ main {
 h3,
 p {
     color: black;
-}
-
-nav,
-header,
-main,
-footer {
-    max-width: 750px;
-    margin: 0 auto;
-    border-radius: 16px;
-    color: whitesmoke;
 }
 
 header {
