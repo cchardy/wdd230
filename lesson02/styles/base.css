@@ -65,7 +65,7 @@ footer {
     border: 1px solid rgb(113, 190, 241);
     padding: .5rem;
     background-color: whitesmoke;
-    align-items: center;
+    text-align: center;
 }
 
 .container {
