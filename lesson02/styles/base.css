@@ -8,10 +8,7 @@ body {
     font-size: 16px;
 }
 
-h1 {
-    color: whitesmoke;
-}
-
+h3,
 p {
     color: black;
 }
@@ -23,6 +20,7 @@ footer {
     max-width: 750px;
     margin: 0 auto;
     border-radius: 16px;
+    color: whitesmoke;
 }
 
 header {
