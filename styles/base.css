@@ -76,6 +76,19 @@ nav a:hover {
     color: rgb(191, 195, 250);
 }
 
+#menu {
+    display: none;
+    /* hide hamburger button */
+}
+
+.navigation {
+    flex-direction: row;
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
 
 footer {
     margin: 1rem auto;
