@@ -82,12 +82,16 @@ nav a:hover {
 }
 
 .navigation {
-    flex-direction: row;
+    flex-direction: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
 }
 
 .navigation a {
-    display: block;
-    flex: 1 1 100%;
+    text-align: center;
 }
 
 .card {
