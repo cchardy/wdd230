@@ -1,12 +1,9 @@
-mobile {
-    display: flex;
-}
-
 #menu {
+    display: block;
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: #3cc799;
     position: fixed;
     right: 0;
     top: 0;
@@ -21,24 +18,36 @@ mobile {
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     list-style: none;
-    background-color: #333;
-    color: #fff;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
 }
 
 .navigation a {
-    display: none;
+    display: block;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #5f5e5e;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover {
+.navigation a:hover,
+navigation a:active {
     background-color: #bbb;
-    color: #333;
-    font-weight: 700;
+    color: whitesmoke;
+}
+
+.show li {
+    display: block;
+}
+
+#menau.show::before {
+    content: "X";
 }

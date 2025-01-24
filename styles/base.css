@@ -55,43 +55,13 @@ header img {
     border-radius: 16px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    color: rgb(6, 24, 83);
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
 nav a:hover {
-    border: 1px solid #f8f40a;
+    border: 2px solid #c0bd10;
 
 }
 
 .active {
     color: rgb(191, 195, 250);
-}
-
-#menu {
-    display: none;
-    /* hide hamburger button */
-}
-
-.navigation {
-    flex-direction: flex;
-}
-
-.navigation li {
-    display: block;
-    flex: 1 1 100%;
-}
-
-.navigation a {
-    text-align: center;
 }
 
 .card {
