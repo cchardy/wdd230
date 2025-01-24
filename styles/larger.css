@@ -7,16 +7,12 @@
     }
 
     .navigation {
-        flex-direction: flex;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
+        flex-direction: row;
     }
 
     .navigation a {
-        text-align: center;
+        display: block;
+        flex: 1 1 100%;
     }
 
     #menu {

@@ -18,30 +18,30 @@
 }
 
 .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     list-style: none;
-    margin: 0 auto;
-    max-width: 760px;
-}
-
-.navigation li {
-    display: none;
+    background-color: #bbb;
+    color: whitesmoke;
 }
 
 .navigation a {
-    display: block;
+    display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #5f5e5e;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    color: whitesmoke;
 }
 
-.navigation a:hover,
-navigation a:active {
+.navigation a:hover {
     background-color: #bbb;
     color: whitesmoke;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
 }
 
 .show li {
