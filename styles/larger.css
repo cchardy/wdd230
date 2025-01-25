@@ -1,17 +1,14 @@
-@media (min-width: 800px) {
+@media (min-width: 640px) {
 
     main {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        column-gap: 16px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .navigation {
-        flex-direction: row;
+    nav ul {
+        display: flex;
     }
 
-    .navigation a {
-        display: block;
+    nav ul li {
         flex: 1 1 100%;
     }
 
