@@ -84,3 +84,9 @@ footer {
     background-color: rgb(6, 24, 83);
     align-items: center;
 }
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
