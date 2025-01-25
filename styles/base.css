@@ -70,10 +70,7 @@ nav a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 20px 0px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-#card {
+    box-shadow: 10px 10px 5px #e0dfdf;
     grid-template-columns: auto auto;
 }
 
