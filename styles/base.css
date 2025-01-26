@@ -43,7 +43,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    list-style: none;
+    list-style-type: none;
 }
 
 header {
@@ -60,6 +60,18 @@ header img {
     width: 100%;
     height: auto;
     border-radius: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: rgb(6, 24, 83);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 nav a:hover {

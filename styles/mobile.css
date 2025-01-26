@@ -40,6 +40,7 @@ main section {
     list-style: none;
     background-color: #bbb;
     color: whitesmoke;
+    padding: 1rem;
 }
 
 .navigation a {
@@ -64,6 +65,6 @@ main section {
     display: block;
 }
 
-#menau.show::before {
+#menu.show::before {
     content: "X";
 }
