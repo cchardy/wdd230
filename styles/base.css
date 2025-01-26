@@ -46,6 +46,10 @@ main {
     list-style-type: none;
 }
 
+main ul {
+    list-style-type: none;
+}
+
 header {
     margin: 1rem auto;
     border: 1px solid rgb(113, 190, 241);
