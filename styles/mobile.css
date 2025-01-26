@@ -13,6 +13,10 @@ main section {
     background-color: #eee;
 }
 
+main ul {
+    list-style-type: none;
+}
+
 
 #menu {
     display: block;
