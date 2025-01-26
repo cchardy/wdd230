@@ -46,7 +46,7 @@ main {
     list-style-type: none;
 }
 
-main ul {
+ul.activities {
     list-style-type: none;
 }
 
