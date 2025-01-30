@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul::marker,
+ol::marker {
+    content: '';
+}
+
 ul.activities {
     list-style-type: none;
     padding: 1rem;
