@@ -43,7 +43,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    list-style-type: none;
+    list-style-type: inside;
 }
 
 ul.activities {
