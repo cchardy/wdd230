@@ -28,13 +28,10 @@ h3 {
 
 nav,
 header,
-main,
 footer {
     max-width: 750px;
     margin: 0 auto;
     border-radius: 16px;
-    list-style-type: none;
-    padding: 1rem;
 }
 
 main {
@@ -46,6 +43,7 @@ main {
     align-items: center;
     min-height: 100vh;
     list-style: none;
+    padding: 1rem;
 }
 
 
