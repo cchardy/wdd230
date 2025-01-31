@@ -1,11 +1,17 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: aptos display, sans-serif;
+    color: #3d405b;
     text-align: center;
 }
 
@@ -13,15 +19,20 @@ h1 {
     font-size: 4vw;
 }
 
-h2, h3 {
-    color: rgb(6, 105, 163);
+h2,
+h3 {
+    color: #e07a5f;
 }
 
 body {
     font-size: 16px;
 
 }
-nav, header, main, footer {
+
+nav,
+header,
+main,
+footer {
     max-width: 750px;
     margin: 0 auto;
     border-radius: 16px;
@@ -29,9 +40,9 @@ nav, header, main, footer {
 
 header {
     margin: 1rem auto;
-    border: 1px solid rgb(113, 190, 241);
+    border: 1px solid #f2cc8f;
     padding: 1rem;
-    background-color: rgb(6, 24, 83);
+    background-color: #81b29a;
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
@@ -46,7 +57,7 @@ header img {
 div.banner {
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: rgb(230, 243, 254);
+    background-color: #f4f1de;
     font-weight: 700;
     word-break: break-word;
     text-align: center;
@@ -58,26 +69,26 @@ nav ul {
 
 nav a {
     display: block;
-    color:rgb(6, 24, 83);
+    color: #e07a5f;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
 }
 
 nav a:hover {
-    border: 1px solid #f8f40a;
+    border: 1px solid #f2cc8f;
 
 }
 
 .active {
-    color: black;
+    color: #81b29a;
 }
 
 
 footer {
     margin: 1rem auto;
-    border: 1px solid rgb(113, 190, 241);
+    border: 1px solid #f2cc8f;
     padding: .5rem;
-    background-color: rgb(6, 24, 83);
+    background-color: #81b29a;
     align-items: center;
 }
