@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-ul::marker,
-ol::marker {
-    content: '';
-}
-
-ul.activities {
-    list-style-type: none !important;
-    padding: 1rem;
-}
-
 h1,
 h2,
 h3,
@@ -38,11 +28,13 @@ h3 {
 
 nav,
 header,
+main,
 footer {
     max-width: 750px;
     margin: 0 auto;
     border-radius: 16px;
     list-style-type: none;
+    padding: 1rem;
 }
 
 main {
