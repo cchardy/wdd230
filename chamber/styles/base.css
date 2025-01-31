@@ -63,7 +63,7 @@ div.banner {
     text-align: center;
 }
 
-main,
+main ul,
 nav ul {
     list-style-type: none;
 }
