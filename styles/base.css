@@ -26,6 +26,11 @@ h3 {
     color: rgb(7, 55, 145);
 }
 
+.activities li {
+    list-style-type: none;
+    padding: 2rem;
+}
+
 nav,
 header,
 footer {
