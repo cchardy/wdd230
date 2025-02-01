@@ -16,6 +16,16 @@ p {
     text-align: center;
 }
 
+ul,
+li,
+a,
+p {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
 h1 {
     font-size: 4vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
