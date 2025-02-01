@@ -1,10 +1,10 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation')
+let menuButton = document.querySelector("#menu");
+let navList = document.querySelector("nav ul")
+menuButton.addEventListener("click", () => {
+    menuButton.classList.toggle("open")
+    navList.classList.toggle("open")
+})
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('show');
-    hamButton.classList.toggle('open');
-});
 function detectMob() {
     const toMatch = [
         /Android/i,
