@@ -95,6 +95,15 @@ nav a:hover {
     color: #81b29a;
 }
 
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 .switch {
     position: relative;
     display: inline-block;
