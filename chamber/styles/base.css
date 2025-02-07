@@ -147,12 +147,9 @@ nav a:hover {
     transition: .4s;
 }
 
-input:checked+.slider {
-    background-color: #f2cc8f;
-}
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #e07a5f;
 }
 
 input:checked+.slider:before {
