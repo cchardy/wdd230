@@ -1,7 +1,7 @@
 
 const list = document.querySelector('#favchap');
 const input = document.querySelector('button');
-const button = document.querySelector('ul');
+const button = document.querySelector('#list');
 
 button.addEventListener('click', () => {
     const myItem = input.value;
