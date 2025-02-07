@@ -104,6 +104,12 @@ nav a:hover {
     font-size: 2rem;
 }
 
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
+
 .switch {
     position: relative;
     display: inline-block;

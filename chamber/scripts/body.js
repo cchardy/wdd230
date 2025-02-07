@@ -12,21 +12,17 @@ let lastModifiedDate = document.querySelector("#lastModified");
 lastModifiedDate.textContent = new Date(document.lastModified);
 
 //dark mode
-let darkButton = document.querySelector("#mode");
-darkButton.addEventListener('click', () => {
-    darkButton.classList.toggle("dark")
-    if (darkButton.classList.contains("dark")) {
-        document.documentElement.style.setProperty('--text-color1', 'white');
-        document.documentElement.style.setProperty('--text-color2', 'black')
-        document.documentElement.style.setProperty('--background-color', '#315659');
-        document.documentElement.style.setProperty('--accent-color', '#7EA8BE');
-        document.documentElement.style.setProperty('--header-color', '#28536B');
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+    if (modeButton.textContent.includes("🕶️")) {
+        main.style.background = "#000";
+        main.style.color = "#fff";
+        modeButton.textContent = "🔆";
+    } else {
+        main.style.background = "#eee";
+        main.style.color = "#000";
+        modeButton.textContent = "🕶️";
     }
-    else {
-        document.documentElement.style.setProperty('--text-color1', 'black');
-        document.documentElement.style.setProperty('--text-color2', 'white');
-        document.documentElement.style.setProperty('--background-color', '#A3C4BC');
-        document.documentElement.style.setProperty('--accent-color', '#28536B');
-        document.documentElement.style.setProperty('--header-color', '#7EA8BE');
-    }
-})
+});
