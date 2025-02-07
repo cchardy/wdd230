@@ -12,9 +12,14 @@ let lastModifiedDate = document.querySelector("#lastModified");
 lastModifiedDate.textContent = new Date(document.lastModified);
 
 //dark mode
+const checkbox = document.getElementById("checkbox")
 const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 const main = document.querySelector("main");
+
+checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+})
 
 modeButton.addEventListener("click", () => {
     body.classList.toggle('dark-mode');
