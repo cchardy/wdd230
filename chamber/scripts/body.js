@@ -13,16 +13,10 @@ lastModifiedDate.textContent = new Date(document.lastModified);
 
 //dark mode
 const modeButton = document.querySelector("#mode");
+const body = document.querySelector("body");
 const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
-    if (modeButton.textContent.includes("🕶️")) {
-        main.style.background = "#000";
-        main.style.color = "#fff";
-        modeButton.textContent = "🔆";
-    } else {
-        main.style.background = "#eee";
-        main.style.color = "#000";
-        modeButton.textContent = "🕶️";
-    }
+    body.classList.toggle('dark-mode');
+    main.classList.toggle('dark-mode');
 });
