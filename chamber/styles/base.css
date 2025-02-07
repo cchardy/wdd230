@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #f2cc8f;
 }
 
 input:focus+.slider {
