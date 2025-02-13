@@ -25,10 +25,6 @@ p {
     list-style-type: none;
 }
 
-h1 {
-    font-size: 4vw;
-}
-
 h2,
 h3 {
     color: #e07a5f;
@@ -63,6 +59,20 @@ header img {
     width: 100%;
     height: auto;
     border-radius: 16px;
+}
+
+#menu {
+    border: none;
+    padding: 18px;
+    width: 100%;
+}
+
+#menu::before {
+    content: "=";
+}
+
+#menu.open::before {
+    content: "X";
 }
 
 div.banner {
