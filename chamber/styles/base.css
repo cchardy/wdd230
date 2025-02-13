@@ -68,11 +68,17 @@ header img {
 }
 
 #menu::before {
-    content: "=";
+    content: "Open";
 }
 
 #menu.open::before {
-    content: "X";
+    content: "Close";
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 div.banner {
