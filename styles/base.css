@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
@@ -34,6 +28,9 @@ h1 {
 h2,
 h3 {
     color: rgb(7, 55, 145);
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 16px;
 }
 
 .activities li {
