@@ -1,16 +1,19 @@
-@media (min-width: 640px) {
+@media (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 18px 5vw;
+    }
 
     main {
+        display: grid;
         grid-template-columns: auto auto auto;
+        column-gap: 16px;
     }
 
-    nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
 
     #menu {
         display: none;
