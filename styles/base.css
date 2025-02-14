@@ -97,11 +97,13 @@ nav a:hover {
 }
 
 .card {
-    background-color: white;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin: 20px 0px;
-    box-shadow: 5px 5px 3px #f0eeee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
 }
 
 .hero {
