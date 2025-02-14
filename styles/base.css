@@ -22,7 +22,8 @@ p {
 
 h1 {
     font-size: 4vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
 }
 
 h2,
@@ -57,8 +58,6 @@ main section {
     list-style-type: none;
     padding: 1rem;
 }
-
-
 
 header {
     margin: 1rem auto;
