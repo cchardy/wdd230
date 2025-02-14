@@ -1,7 +1,8 @@
-let menuButton = document.querySelector("#menu");
-let navList = document.querySelector("nav ul")
-menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle("open")
-    navList.classList.toggle("open")
-})
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+    navigation.setAttribute('aria-hidden', navigation.classList.contains('open') ? 'false' : 'true');
+});
