@@ -94,7 +94,7 @@ header img {
 }
 
 .showMenu {
-    transforom: translateY(0);
+    transform: translateY(0);
 }
 
 .hamburger {
