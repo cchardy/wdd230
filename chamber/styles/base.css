@@ -21,6 +21,7 @@ a,
 p {
     padding-bottom: 7px;
     padding-top: 7px;
+    padding-left: 3px;
     padding-inline-start: 0px;
     list-style-type: none;
 }
