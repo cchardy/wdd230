@@ -4,18 +4,29 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    nav ul {
+
+    nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
+    nav a {
+        padding: 18px 5vw;
     }
 
-    #menu-button {
+    #menu {
         display: none;
     }
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
 }
