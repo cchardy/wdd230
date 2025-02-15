@@ -28,7 +28,7 @@ p {
 
 h2,
 h3 {
-    color: #e07a5f;
+    color: #3d405b;
 }
 
 body {
@@ -153,13 +153,13 @@ nav a:hover {
 }
 
 .dark-mode {
-    background-color: #000;
+    background-color: #3d405b;
     color: #fff;
     border-color: #eee;
 }
 
 body.dark {
-    background-color: #292c35;
+    background-color: #3d405b;
 }
 
 body.dark h1,
