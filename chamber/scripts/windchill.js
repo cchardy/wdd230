@@ -1,36 +1,23 @@
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=37.94&lon=-121.94&units=imperial&appid=40ab55ee19ebd6f2e875c4b6dd07e931"
+function calculateWindChill(temperature, windSpeed) {
+    return 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+}
 
-let currentTemp = document.querySelector("#temperature")
-let weatherIcon = document.querySelector("#weatherIcon")
-let currentConditions = document.querySelector("#currentConditions")
-let weatherForecast = document.querySelector("#forecast")
-let windSpeed = document.querySelector("#windspeed")
-let windChill = document.querySelector("#windchill");
+function updateWindChill() {
 
-async function apiFetch() {
-    try {
-        const response = await fetch(url)
-        if (response.ok) {
-            const data = await response.json()
-            displayResults(data)
-        }
-        else {
-            throw Error(await response.text())
-        }
-    }
-    catch (error) {
-        console.log(error)
+    const temperature = parseFloat(document.getElementById("temperature").value);
+    const windSpeed = parseFloat(document.getElementById("windSpeed").value);
+
+    if (temperature <= 50 && windSpeed > 3.0) {
+        const windChill = calculateWindChill(temperature, windSpeed);
+        document.getElementById("windchill").textContent = "Wind chill: " + Math.round(windChill * 100) / 100 + " °F";
+    } else {
+        document.getElementById("windchill").textContent = "Calculate wind chill above.";
     }
 }
 
-function displayResults(data) {
-    currentTemp.innerHTML = `${parseInt(data.list[0].main.temp.toFixed(0))}`
-    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`
-    let desc = data.list[0].weather[0].description
-    weatherForecast.innerHTML = `${parseInt(data.list[1].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[2].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[3].main.temp.toFixed(0))}&deg;F`
-    weatherIcon.setAttribute("src", iconsrc)
-    weatherIcon.setAttribute("alt", "Weather Icon")
-    currentConditions.textContent = `${desc}`
-}
+document.addEventListener("DOMContentLoaded", updateWindChill);
 
-apiFetch()
+document.getElementById("temperature").addEventListener("input", updateWindChill);
+document.getElementById("windSpeed").addEventListener("input", updateWindChill);
+
+document.getElementById("windchill").innerHTML = calculateWindChill(temperature, windSpeed);
