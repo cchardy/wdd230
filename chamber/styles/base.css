@@ -52,6 +52,7 @@ main {
 section {
     box-shadow: 0 4px 8px 0 lightgray;
     padding: 2rem;
+    background-color: #f4f1de;
 }
 
 h2 {
