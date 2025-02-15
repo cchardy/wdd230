@@ -178,6 +178,18 @@ body.dark .support a {
     transform: translateX(24px);
 }
 
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 footer {
     margin: 1rem auto;
