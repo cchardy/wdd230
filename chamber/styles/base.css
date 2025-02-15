@@ -191,6 +191,25 @@ body.dark .support a {
     object-fit: cover;
 }
 
+#currentEvents,
+#weatherCard {
+    background-color: #f4f1de;
+    border-style: outset;
+    grid-column: 2/5;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#currentEvents {
+    grid-row: 2;
+    max-height: 400px;
+}
+
+#weatherCard {
+    grid-row: 3;
+    max-height: 300px;
+}
+
 footer {
     margin: 1rem auto;
     border: 1px solid #f2cc8f;
