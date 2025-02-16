@@ -1,69 +1,71 @@
-#menu {
-    display: block;
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #3cc799;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
+@media (max-width: 480px) {
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #3cc799;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
 
-#menu::before {
-    content: "☰";
-}
+    #menu::before {
+        content: "☰";
+    }
 
-#menu.open::before {
-    content: "✖️";
-}
+    #menu.open::before {
+        content: "✖️";
+    }
 
-main {
-    max-width: 767px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
-}
+    main {
+        max-width: 767px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 0.8rem;
+    }
 
-main section {
-    margin: 0.5rem;
-    border: 1px solid #bbb;
-    padding: 0 1rem;
-    background-color: #eee;
-}
+    main section {
+        margin: 0.5rem;
+        border: 1px solid #bbb;
+        padding: 0 1rem;
+        background-color: #eee;
+    }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: #bbb;
-    color: whitesmoke;
-    padding: 1rem;
-}
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: #bbb;
+        color: whitesmoke;
+        padding: 1rem;
+    }
 
-.navigation a {
-    display: none;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
-}
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
 
-.navigation a:hover {
-    background-color: #bbb;
-    color: whitesmoke;
-    font-weight: 700;
-}
+    .navigation a:hover {
+        background-color: #bbb;
+        color: whitesmoke;
+        font-weight: 700;
+    }
 
-.open a {
-    display: block;
-}
+    .open a {
+        display: block;
+    }
 
-.show li {
-    display: block;
-}
+    .show li {
+        display: block;
+    }
 
-#menu.show::before {
-    content: "X";
+    #menu.show::before {
+        content: "X";
+    }
 }
