@@ -94,7 +94,7 @@ header img {
 }
 
 navMenu {
-    grid-template-columns: auto;
+    grid-template-rows: auto;
     align-items: center;
 
 }
