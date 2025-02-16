@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h2,
+h3 {
+    color: #e07a5f;
+}
+
 h1,
 h2,
 h3,
@@ -24,11 +29,6 @@ p {
     padding-left: 3px;
     padding-inline-start: 0px;
     list-style-type: none;
-}
-
-h2,
-h3 {
-    color: #3d405b;
 }
 
 body {
