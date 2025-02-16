@@ -98,7 +98,7 @@ header img {
 }
 
 .hamburger {
-    position: fixed;
+    position: relative;
     z-index: 100;
     top: 1rem;
     right: 1rem;
@@ -109,7 +109,7 @@ header img {
 }
 
 .menu {
-    position: fixed;
+    position: relative;
     transform: translateY(-100%);
     transition: transform 0.2s;
     top: 0;
@@ -117,8 +117,8 @@ header img {
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
-    color: white;
+    background: #f4f1de;
+    color: #e07a5f;
     list-style: none;
     padding-top: 4rem;
 }
