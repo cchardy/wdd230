@@ -93,8 +93,8 @@ header img {
     border-radius: 16px;
 }
 
-navMenu {
-    grid-template-rows: auto;
+#navMenu {
+    grid-template-columns: auto;
     align-items: center;
 
 }
