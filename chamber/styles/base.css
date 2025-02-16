@@ -93,6 +93,12 @@ header img {
     border-radius: 16px;
 }
 
+navMenu {
+    grid-template-columns: auto;
+    align-items: center;
+
+}
+
 .showMenu {
     transform: translateY(0);
 }
