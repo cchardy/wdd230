@@ -1,59 +1,23 @@
+// In your js file, declare three const variables that hold references to the input, button, and list elements.
+const favChap = document.querySelector("#favchap")
+const submitButton = document.querySelector("#button")
+const elementList = document.querySelector("#list")
 
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('#list');
-
-// Helper function to check for duplicates
-function isDuplicate(chapter) {
-    const chapters = Array.from(list.querySelectorAll('li'));
-    return chapters.some(li => li.textContent.includes(chapter));
-}
-
-// Allows users to add chapters by pressing "ENTER"
-button.addEventListener('click', addChapter);
-input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        addChapter();
-    }
-});
-
-// The input field is cleared and focus is set back to it
-function addChapter() {
-    const chapter = input.value.trim();
-
-    if (chapter === '') {
-        input.focus();
+// Create a click event listener for the Add Chapter button using addEventListener and an anonymous function or arrow function.
+submitButton.addEventListener("click", () => {
+    if (favChap.value == "") {
+        favChap.focus();
         return;
     }
-
-    // Checks for duplicate chapters
-    if (isDuplicate(chapter)) {
-        alert('Chapter is already in the list!');
-        input.value = '';
-        input.focus();
-        return;
-    }
-
-    const li = document.createElement('li');
-    const deleteButton = document.createElement('button');
-
-    li.textContent = chapter;
-    deleteButton.textContent = '✖️';
-
-    li.append(deleteButton);
-    list.append(li);
-
-    // Delete chapter when the delete button is clicked
-    deleteButton.addEventListener('click', function () {
-        list.removeChild(li);
-        input.focus();
-    });
-
-    input.value = '';
-    input.focus();
-}
-
-const el = document.getElementById('button');
-console.log(el.ariaLabel);
-el.ariaLabel = 'Add a Chapter';
-console.log(el.ariaLabel);
+    let liElement = document.createElement("li");
+    let deleteButton = document.createElement("button");
+    liElement.textContent = favChap.value;
+    deleteButton.innerHTML = "❌";
+    liElement.append(deleteButton);
+    elementList.append(liElement);
+    deleteButton.addEventListener("click", () => {
+        liElement.remove();
+        favChap.focus();
+    })
+    favChap.value = "";
+})
