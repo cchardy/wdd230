@@ -96,6 +96,14 @@ nav a:hover {
 
 }
 
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+}
+
 .active {
     color: rgb(191, 195, 250);
 }
