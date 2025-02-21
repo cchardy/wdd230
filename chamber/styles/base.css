@@ -93,12 +93,6 @@ header img {
     border-radius: 16px;
 }
 
-navMenu {
-    grid-template-columns: auto;
-    align-items: center;
-
-}
-
 div.banner {
     border: 1px solid #bbb;
     padding: 1rem;
@@ -110,6 +104,9 @@ div.banner {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
 }
 
 nav a {
@@ -118,12 +115,31 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    border: 2px solid white;
 }
 
 nav a:hover {
     border: 1px solid #f2cc8f;
 
 }
+
+.navigation {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+}
+
 
 .active {
     color: #81b29a;
