@@ -104,6 +104,19 @@ nav a:hover {
     display: flex;
 }
 
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+}
+
 .active {
     color: rgb(191, 195, 250);
 }
