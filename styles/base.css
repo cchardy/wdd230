@@ -52,15 +52,16 @@ footer {
     border-radius: 16px;
 }
 
-main section {
+section {
     font-size: 16px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     padding: 1rem;
+    box-shadow: 0 4px 8px 0 lightgray;
 }
 
 header {
