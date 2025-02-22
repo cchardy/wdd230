@@ -1,16 +1,13 @@
-let visits = getNumberOfVisits()
-let visitsSpan = document.querySelector("#visits")
-visitsSpan.innerText = visits
+const visitsDisplay = document.querySelector(".visits");
 
-function getNumberOfVisits() {
-    let visitCount = localStorage.getItem("site-visits")
-    if (visitCount == null) {
-        visitCount = 0
-    }
-    else {
-        visitCount = parseInt(visitCount)
-    }
-    visitCount = visitCount + 1
-    localStorage.setItem("site-visits", `${visitCount}`)
-    return visitCount
+let numVisits = Number(localStorage.getItem("visits-local"));
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
 }
+else {
+    visitsDisplay.textContent = "This is your first visit. Welcome!";
+}
+
+numVisits++;
+localStorage.setItem("visits-local", numVisits);
