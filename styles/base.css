@@ -132,6 +132,19 @@ nav a:hover {
     padding: 100px 50px;
 }
 
+main {
+    grid-template-columns: 1fr 1fr;
+}
+
+main section:nth-child(2) {
+    display: block;
+}
+
+main section:nth-child(3) {
+    grid-column: span 2;
+}
+
+
 .hero {
     margin: 10px auto;
     position: relative;
