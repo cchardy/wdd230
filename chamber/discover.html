@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carmen Hardy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Aberdeen Chamber of Commerce Discover page"</title>
+    <meta name="description" content="WDD230: discover site">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discover site example">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+
+        <h1>City of Aberdeen, Idaho</h1>
+        <picture>
+            <img src="images/Aberdeensunset.jpg" alt="Sunset in Aberdeen Idaho">
+        </picture>
+        <div class="banner">Join us<br>Chamber of Commerce</div>
+
+
+    </header>
+    <button id="menu" ariai-label="Toggle navigations" class></button>
+    <nav>
+        <ul class="nagivation">
+            <li><a href=":index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="top-message">You visited </div>
+        <div class="left-sidebar">
+            <section class="card">
+                <h3>Demographics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, veritatis saepe? Nobis architecto
+                    impedit illo ut, dolorem eos. Possimus ipsam, doloribus distinctio tempore esse corrupti?</p>
+            </section>
+            <section class="card">
+                <h3>Statistical Data</h3>
+                <p>Nobis architecto impedit illo ut, dolorem eos. Possimus ipsam, doloribus distinctio tempore esse
+                    corrupti?</p>
+            </section>
+            <section class="card">
+                <h3>Attractions</h3>
+                <p>Quam, veritatis saepe? Nobis architecto impedit illo ut, dolorem eos. Possimus ipsam, doloribus
+                    distinctio tempore esse corrupti?</p>
+            </section>
+            <section class="card">
+                <h3>Events</h3>
+                <p>tempore esse corrupti</p>
+            </section>
+        </div>
+        <div>
+            <picture>
+                <img src="images/landscape_1.jpg" alt="landscape mountain clouds" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="images/landscape_2.jpg" alt="landscape moon and river" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="images/landscape_3.jpg" alt="landscape swan on frosted lake" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="images/landscape_4.jpg" alt="landscape waterfall" loading="lazy" width="400" height="600">
+            </picture>
+            <picture>
+                <img src="images/landscape_5.jpg" alt="landscape snow forest" loading="lazy" width="400" height="600">
+            </picture>
+            <picture>
+                <img src="images/landscape_6.jpg" alt="landscape frost trees" loading="lazy" width="400" height="600">
+            </picture>
+
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentdate"></span><br>Carmen Hardy <br> Project for WDD 230</p>
+        <p id="date"></p>
+        <p>Last Modified:</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/body.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+
+</body>
+
+</html>
