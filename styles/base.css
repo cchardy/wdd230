@@ -130,6 +130,8 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 100px 50px;
     padding: 100px 50px;
+    font: rgb(6, 24, 83);
+    background-color: cornsilk;
 }
 
 main {
