@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.card p {
+    color: rgb(6, 24, 83);
+}
+
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
@@ -130,7 +134,6 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 100px 50px;
     padding: 100px 50px;
-    font: rgb(6, 24, 83);
     background-color: cornsilk;
 }
 
