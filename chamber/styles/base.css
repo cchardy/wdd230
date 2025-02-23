@@ -258,5 +258,5 @@ footer {
 }
 
 .left-sidebar {
-    background: #eee
+    background: #eee grid-column: 1/1;
 }
