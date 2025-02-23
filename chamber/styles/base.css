@@ -258,5 +258,6 @@ footer {
 }
 
 .left-sidebar {
-    background: #eee grid-column: 1/1;
+    background: #eee;
+    grid-column: 1/1;
 }
