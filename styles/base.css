@@ -35,7 +35,6 @@ h2,
 h3 {
     color: rgb(7, 55, 145);
     text-align: center;
-    border-bottom: 1px solid;
     padding: 16px;
 }
 
@@ -132,8 +131,8 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
+    gap: 10px 10px;
+    padding: 10px 10px;
     background-color: cornsilk;
 }
 
