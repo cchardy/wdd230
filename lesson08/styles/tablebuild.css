@@ -4,9 +4,10 @@ body {
 
 table {
     margin: 10px auto;
-    border: thin solid;
+    border: thin solid black;
     box-shadow: 0 0 10px grey;
     border-collapse: collapse;
+    font-size: 1.5rem;
 }
 
 caption {
@@ -16,28 +17,31 @@ caption {
     font-size: .85rem;
 }
 
-tr:first-child th,
-.highlight {
+thead tr:nth-child(2) td {
     background-color: grey;
-    color: white;
+    padding: 15px;
+}
+
+thead tr:nth-child(2) td:nth-child(1) {
+    background-color: black;
 }
 
 th,
 td {
     padding: 7px 15px;
-    border: 1px solid grey;
+    border: 1 px solid grey;
 }
 
-th {
+thead th:nth-child(1) {
     background-color: black;
-    font-size: larger;
-    font: white;
+    color: white;
 }
 
-td {
-    text-align: center;
+tbody tr:nth-child(even) {
+    background-color: lightgrey;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: grey;
+tbody td {
+    border 1px lightgray solid;
+    padding: 15px;
 }
