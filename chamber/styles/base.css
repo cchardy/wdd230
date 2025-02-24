@@ -45,7 +45,7 @@ main {
 .hero {
     grid-column: 1 / 4;
     width: 100%;
-    max-width: 1279px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
