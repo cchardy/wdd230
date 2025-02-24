@@ -250,6 +250,18 @@ footer {
     font-size: 16px;
 }
 
+.clock-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#clock {
+    font-size: 2em;
+    color: #333;
+}
+
 .top-message {
     background: #f2cc8f;
     text-align: center;
