@@ -17,11 +17,6 @@ caption {
     font-size: .85rem;
 }
 
-thead tr:nth-child(2) td {
-    background-color: grey;
-    padding: 15px;
-}
-
 thead tr:nth-child(2) td:nth-child(1) {
     background-color: black;
 }
@@ -29,7 +24,6 @@ thead tr:nth-child(2) td:nth-child(1) {
 th,
 td {
     padding: 7px 15px;
-    border: 1 px solid grey;
 }
 
 thead th:nth-child(1) {
