@@ -137,6 +137,7 @@ nav a:hover {
 }
 
 main {
+    position: relative;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -159,7 +160,6 @@ main section:nth-child(3) {
 .hero img {
     width: 100%;
     height: auto;
-
 }
 
 .herolabel {
