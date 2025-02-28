@@ -33,7 +33,7 @@ pwd2.addEventListener("focusout", checkSame);
 // This should be refactored.
 function checkSame() {
     if (pwd1.value !== pwd2.value) {
-        message.textContent = "❗Key Phrases DO NOT MATCH!";
+        message.textContent = "❗Passwords DO NOT MATCH!";
         message.style.visibility = "show";
         pwd2.style.backgroundColor = "#fff0f3";
         pwd2.value = "";

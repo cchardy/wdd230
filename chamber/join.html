@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carmen Hardy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Aberdeen Chamber of Commerce Home"</title>
+    <meta name="description" content="WDD230: chamber site">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber site example">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+
+        <h1>City of Aberdeen Chamber of Commerce</h1>
+        <picture>
+            <img src="images/logo.png" alt="logo Aberdeen Idaho">
+        </picture>
+        <div class="banner">Join us<br>Chamber of Commerce</div>
+
+
+    </header>
+    <button id="menu" aria-label="Toggle navigations" class></button>
+    <nav>
+        <ul class="nagivation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <form method="get" action="thankyou.html" class="join1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label>Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}"
+                        required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="info@example.com"
+                        required></label>
+                <label>Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+                <label>Business/Organization's Name <input type="text" id="bname" name="bname"
+                        placeholder="Company, Inc."></label>
+                <label>Business/Organization Description <input type="text" id="description" name="description"
+                        placeholder="please describe your business" </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Membership</div>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                <label><input type="radio" name="membership" value="nonprofit"> Non-profit Membership</label>
+
+            </fieldset>
+
+
+
+            <input type="submit" value="Submit Application">
+
+        </form>
+
+        <div class="left-sidebar">
+            <h2>Membership Information</h2>
+            <h3>Bronze Membership</h3>
+            <h6>$250 each year</h6>
+            <p>Networking opportunities with member pricing
+                Attend signature events with member pricing
+                Subscription and member spotlight in the Chamber newsletter
+                Civic Engagement and Community Service opportunities
+                Ribbon Cutting/Open House
+                “Proud Member” badge for email sign-off
+                Membership directory to optimize membership exposure
+                Twice a year spotlight through social media
+                Post company’s announcements in the “Member News” section
+                Post corporate events in SSL Chamber community calendar
+                Professional Development workshops with member pricing
+                Legislative affairs newsletter and updates.
+                “In the Know” City Newsletter and events subscription
+                Members will have an opportunity to participate in Chamber
+                Women in Business membership
+                Prioritization of businesses for signature events
+                Certificate of Origin membership discount</p>
+
+            <h3>Silver Membership</h3>
+            <h6>$400 each year</h6>
+            <p>**Silver package will receive bronze-level package benefits
+                2 Spots in the golf tournament
+                4 SSL Chamber Annual Banquet spots
+                Spotlight during events to increase the visibility
+                Opportunity to add to swag bags for crucial events
+                Opportunity to have a booth at Chamber events
+                Opportunity to be spotlighted four times a year
+                Membership discounts</p>
+
+            <h3>Gold Membership</h3>
+            <h6>$500 each year</h6>
+            <p>*Members will receive bronze & silver-level package benefits
+                4 spots in the golf tournament
+                Opportunity to become a hole sponsor for the golf tournamant
+                Company will have a table & signage for the annual banquet
+                Linked logo will be displayed on Chamber webpage
+                Monthly spotlight across Chamber media channels.
+                Membership discounts</p>
+            <h3>Non-profit Membership</h3>
+            <h6></h6>
+            <p>Will receive Bronze Membership benefits for two years</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><span id="currentdate"></span><br>Carmen Hardy <br> Project for WDD 230</p>
+        <p id="date"></p>
+        <p>Last Modified:</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/body.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+
+</body>
+
+</html>
