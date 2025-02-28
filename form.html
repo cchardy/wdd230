@@ -55,7 +55,7 @@
                         title="A valid byui.edu email address." pattern="[a-zA-A0-9.\-]+@byui.edu" required></label>
             </fieldset>
 
-            <label for="r">Page Rating Input</label>
+            <label id="r">Page Rating Input</label>
             <div id="rangevalue"></div>
             <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
             <datalist id="rangevalues">
@@ -71,8 +71,6 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </datalist>
-
-            </fieldset>
 
             <input id="rate-button" type="submit" value="Rate My Page">
 
