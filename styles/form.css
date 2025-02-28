@@ -1,9 +1,19 @@
 :root {
     --color: #333;
     --background-color: #f8f8f8;
-    --background-color2: #c7cc7b;
+    --background-color2: #ddd;
     --accent-color: #5371d4;
-    --accent-color2: rgb(80, 194, 150);
+    --accent-color2: rgb(245, 198, 69);
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+fieldset {
+    border-radius: 5px;
+
 }
 
 input {
@@ -24,17 +34,12 @@ label {
     padding: 10px;
 }
 
-button {
-    font-size: 1.5rem;
-    background-color: var(--accent-color);
-    color: var(--background-color);
-    padding: .7rem;
-}
-
 #rate-button {
     border: none;
     border-radius: 5px;
     margin-top: 30px;
+    background: var(--accent-color2);
+    margin-left: 20px;
 }
 
 .form-main {
@@ -44,7 +49,7 @@ button {
 }
 
 #r {
-    width: 180px;
+    width: 220px;
     margin-bottom: 0;
 }
 
@@ -72,9 +77,9 @@ button {
 }
 
 input[name="email"]:required:valid {
-    background-color: #bed;
+    background-color: greenyellow;
 }
 
 input[name="email"]:invalid {
-    background-color: #ffeeee;
+    background-color: #fbffbd;
 }

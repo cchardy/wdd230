@@ -48,11 +48,9 @@
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>Username* <input type="text" name="usernname" required></label>
-                <label>Password* <input type="password" id="pwd" name="pwd"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="at least 8 alpha-numeric"
-                        required></label>
-                <label>Confirm Password* <input type="password" id="pwd2" name="pwd2"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label for="password">Password* <input type="password" id="pwd1" name="pwd1" pattern="[a-zA-Z -]{8,}"
+                        placeholder="at least 8 alpha-numeric" required></label>
+                <label for="password2">Confirm Password* <input type="password" id="pwd2" name="pwd2" required></label>
                 <label>Email* <input type="email" id="email" name="email" placeholder="your byui email address"
                         title="A valid byui.edu email address." pattern="[a-zA-A0-9.\-]+@byui.edu" required></label>
             </fieldset>
@@ -76,7 +74,7 @@
 
             </fieldset>
 
-            <input type="rate-button" value="Rate My Page">
+            <input id="rate-button" type="submit" value="Rate My Page">
 
         </form>
     </main>

@@ -24,8 +24,8 @@ confirmItem.addEventListener("focusout", () => {
     }
 })
 //password confirmation
-const pwd1 = document.querySelector("#passord");
-const pwd2 = document.querySelector("#passord2");
+const pwd1 = document.querySelector("#password");
+const pwd2 = document.querySelector("#password2");
 const message = document.querySelector("#formmessage");
 
 pwd2.addEventListener("focusout", checkSame);
