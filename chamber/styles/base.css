@@ -11,13 +11,6 @@
     box-sizing: border-box;
 }
 
-.join1 input[type="radio"] {
-    margin-right: 6px;
-    float: left;
-    clear: both;
-}
-
-
 h2,
 h3 {
     color: var(--accent-color);
@@ -304,6 +297,12 @@ fieldset {
     border: 1px solid #ddd;
     padding: .5rem 2%;
     margin-top: 10px;
+
+}
+
+.join1 input[type="radio"] {
+    margin-right: 6px;
+    margin: 3px 3px 0px 5px;
 
 }
 
