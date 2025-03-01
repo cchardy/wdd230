@@ -52,19 +52,3 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     form.addEventListener("submit", handleSubmit);
 });
-
-
-//let confirmItem = document.querySelector("#confirm")
-
-//confirmItem.addEventListener("focusout", () => {
-//    let passwordItem = document.querySelector("#password")
-//    if (confirmItem.value != passwordItem.value) {
-//        document.querySelector("#message").innerText = "Passwords don't match!"
-//        passwordItem.focus()
-//        confirmItem.value = ""
-//        confirmItem.focus()
-//    }
-//    else {
-//        document.querySelector("#message").innerText = ""
-//    }
-//})
