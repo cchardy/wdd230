@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+.join1 input[type="radio"] {
+    margin-right: 6px;
+    float: left;
+    clear: both;
+}
+
+
 h2,
 h3 {
     color: var(--accent-color);
@@ -291,10 +298,12 @@ footer {
     padding: 0 0 0 10px;
 }
 
+
 fieldset {
     border-radius: 5px;
     border: 1px solid #ddd;
     padding: .5rem 2%;
+    margin-top: 10px;
 
 }
 
@@ -318,6 +327,7 @@ label {
     padding: 10px;
     color: var(--color);
     font-size: .9rem;
+    position: relative;
 }
 
 .join1 {
@@ -325,12 +335,6 @@ label {
     text-align: left;
     margin: 50px 15px 20px;
 }
-
-.join1 input[type="radio"] {
-    margin-right: 6px;
-
-}
-
 
 .join1 input:required {
     border-right: solid 8px var(--accent-color);
@@ -348,6 +352,6 @@ label {
     padding: .8rem;
     width: 96%;
     max-width: 400px;
-    margin: -1rem 2% 2rem 2%;
+    margin: 1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
