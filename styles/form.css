@@ -34,38 +34,10 @@ label {
     padding: 10px;
 }
 
-#rate-button {
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
-    background: var(--accent-color2);
-    margin-left: 20px;
-}
-
 .form-main {
     color: var(--color);
     text-align: left;
     margin: 50px 15px 20px;
-}
-
-#r {
-    width: 220px;
-    margin-bottom: 0;
-}
-
-#rangevalue {
-    font-size: 2rem;
-    color: navy;
-}
-
-#rangevalues {
-    display: flex;
-    margin: 0 0 0 25px;
-    width: 200px;
-}
-
-#rangevalues option {
-    flex: 1 1 auto;
 }
 
 .form-main input:required {
@@ -74,12 +46,4 @@ label {
 
 .form-main input:required:valid {
     border-right: solid 8px green;
-}
-
-input[name="email"]:required:valid {
-    background-color: rgb(202, 253, 213);
-}
-
-input[name="email"]:invalid {
-    background-color: #fbffbd;
 }
