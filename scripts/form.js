@@ -52,3 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     form.addEventListener("submit", handleSubmit);
 });
+
+//
+let button = document.querySelector("#rateButton")
+
+button.addEventListener('click', setDateOfSubmission)
+
+function setDateOfSubmission() {
+    document.querySelector("#dateTime").value = Date.now()
+}

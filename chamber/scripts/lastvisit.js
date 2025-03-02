@@ -34,3 +34,12 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock(); // Initial call to display clock immediately
+
+//form submit
+let button = document.querySelector("#submitButton")
+
+button.addEventListener('click', setDateOfSubmission)
+
+function setDateOfSubmission() {
+    document.querySelector("#dateTime").value = Date.now()
+}
