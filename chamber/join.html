@@ -57,7 +57,7 @@
         </div>
 
         <div>
-            <form method="get" action="thankyou.html" class="join1">
+            <form method="post" action="thankyou.html" class="join1">
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label>First Name* <input type="text" id="fname" name="fname" required></label>
@@ -69,8 +69,9 @@
                     <label>Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
                     <label>Business/Organization's Name <input type="text" id="bname" name="bname"
                             placeholder="Company, Inc."></label>
-                    <label>Business/Organization Description <input type="text" id="description" name="description"
-                            placeholder="please describe your business"></label>
+                    <label>Business/Organization Description <textarea name="description" rows="6" cols="50"
+                            placeholder="Please describe your company"></textarea>
+                    </label>
                 </fieldset>
 
                 <fieldset>
