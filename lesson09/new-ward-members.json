@@ -1,0 +1,50 @@
+{
+    "wardInformation": {
+        "familyName": "Simon",
+        "moveInDate": "2025-02-15",
+        "numberOfPeople": 8,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Paul Simon",
+                "gender": "Male",
+                "birthdate": "1980-06-15"
+            },
+            {
+                "name": "Judy Simon",
+                "gender": "Female",
+                "birthdate": "1980-10-19"
+            },
+            {
+                "name": "Rebekah Simon",
+                "gender": "Female",
+                "birthdate": "2011-12-29"
+            },
+            {
+                "name": "Daniel Simon",
+                "gender": "Male",
+                "birthdate": "2014-08-27"
+            },
+            {
+                "name": "Alexander Simon",
+                "gender": "Male",
+                "birthdate": "2017-09-11"
+            },
+            {
+                "name": "Hailey Simon",
+                "gender": "Female",
+                "birthdate": "2018-08-28"
+            },
+            {
+                "name": "Hannah Simon",
+                "gender": "Female",
+                "birthdate": "2020-06-17"
+            },
+            {
+                "name": "Spencer Simon",
+                "gender": "Male",
+                "birthdate": "2022-08-05"
+            }
+        ]
+    }
+}
