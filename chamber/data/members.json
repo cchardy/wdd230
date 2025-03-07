@@ -1,0 +1,68 @@
+{
+    "directory": [
+        {
+            "name": "",
+            "membershipLevel": "gold",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "gold",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "silver",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "silver",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "bronze",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "bronze",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "bronze",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "membershipLevel": "non-profit",
+            "address": ,
+            "phone": ,
+            "website": "",
+            "logo": ""
+        }
+    ]
+}
