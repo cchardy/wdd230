@@ -61,6 +61,7 @@ section {
     list-style-type: none;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 lightgray;
+    background-color: rgb(247, 242, 226);
 }
 
 header {
@@ -133,7 +134,8 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 10px 10px;
     padding: 10px 10px;
-    background-color: cornsilk;
+    background-color: rgb(247, 242, 226);
+    min-height: 400px;
 }
 
 main {
