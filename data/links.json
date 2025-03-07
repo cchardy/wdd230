@@ -1,0 +1,122 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail CSS Layout"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/css_combinators_excercises.webp",
+                    "title": "CSS Combinators Excercises"
+                },
+                {
+                    "url": "https://codepen.io/cchardy/pen/WbeaqPv",
+                    "title": "CSS Pseudo-Elements"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/cchardy/pen/YPKJmJz",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/landscape.webp",
+                    "title": "WebP Image"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load Example"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Web Storage API"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Data Table Build"
+                },
+                {
+                    "url": "lesson08/indexforms.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON Ward Members"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
