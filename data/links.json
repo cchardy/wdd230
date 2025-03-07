@@ -15,6 +15,10 @@
                 {
                     "url": "lesson02/design-principles.html",
                     "title": "Design Principles"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Query"
                 }
             ]
         },
