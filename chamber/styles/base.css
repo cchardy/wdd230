@@ -356,3 +356,48 @@ label {
     margin: 1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
+
+/* Directory page */
+.directory {
+    margin: 1rem auto;
+    border: 1px solid var(--accent-color2);
+    padding: 0.5rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid section {
+    border: ridge var(--accent-color2);
+    border-width: 7px;
+    padding: 15px;
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+}
+
+.grid section p {
+    text-align: left;
+}
+
+#members a:hover {
+    text-decoration: underline;
+}
+
+#members a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color2);
+    font-size: .8em;
+}
+
+#members section {
+    border: ridge var(--header-color);
+    border-width: 7px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color2);
+}
