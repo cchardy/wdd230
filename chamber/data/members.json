@@ -3,65 +3,65 @@
         {
             "name": "Bully Dog Technologies",
             "membershipLevel": "gold",
-            "address": 2854 W 2200th S, Aberdeen, ID 83210,
-            "phone": (208) 397-3200,
+            "address": "2854 W 2200th S, Aberdeen, ID 83210",
+            "phone": "(208) 397-3200",
             "website": "https://bullydog.com/",
             "logo": "images/bulldog-logo.svg"
         },
         {
             "name": "Simplot Grower Solutions",
             "membershipLevel": "gold",
-            "address": 2638 W 1700 S, Aberdeen, ID 83210,
-            "phone": (208) 397-4178,
+            "address": "2638 W 1700 S, Aberdeen, ID 83210",
+            "phone": "(208) 397-4178",
             "website": "https://locations.simplotgrowersolutions.com/en-us/id/aberdeen/simplotgrowersolutions-10753.html",
             "logo": "images/sgs-logo.svg"
         },
         {
             "name": "The Aberdeen Times",
             "membershipLevel": "silver",
-            "address": 31 S Main St, Aberdeen, ID 83210,
-            "phone": (208) 397-4440,
+            "address": "31 S Main St, Aberdeen, ID 83210",
+            "phone": "(208) 397-4440",
             "website": "https://www.press-times.com/",
             "logo": "images/aberdeen-times-logo.gif"
         },
         {
             "name": "Wells Fargo Bank",
             "membershipLevel": "silver",
-            "address": 165 S Main St, Aberdeen, ID 83210,
-            "phone": (208) 397-3167,
+            "address": "165 S Main St, Aberdeen, ID 83210",
+            "phone": "(208) 397-3167",
             "website": "https://www.wellsfargo.com/locator/bank/165__S__MAIN__ST_ABERDEEN_ID_83210/?utm_campaign=Local_Listings&utm_source=Google&group=Community_Bank&loc=AA00656",
             "logo": "images/wells-fargo-logo.png"
         },
         {
             "name": "Wallace Drug",
             "membershipLevel": "bronze",
-            "address": 44 S Main St, Aberdeen, ID 83210,
-            "phone": (208) 397-4540,
+            "address": "44 S Main St, Aberdeen, ID 83210",
+            "phone": "(208) 397-4540",
             "website": "https://www.wallacedrug.com/",
             "logo": "images/wallace-drug-logo.png"
         },
         {
             "name": "Aberdeen's Ace Hardware",
             "membershipLevel": "bronze",
-            "address": 123 S Main St, Aberdeen, ID 83210,
-            "phone": (208) 397-4272,
+            "address": "123 S Main St, Aberdeen, ID 83210",
+            "phone": "(208) 397-4272",
             "website": "https://www.acehardware.com/",
             "logo": "images/ace-hardware-logo.jpg"
         },
         {
             "name": "Sun River of Idaho",
             "membershipLevel": "gold",
-            "address": 351 E Lincoln Ave, Aberdeen, ID 83210,
-            "phone": (208) 397-4166,
+            "address": "351 E Lincoln Ave, Aberdeen, ID 83210",
+            "phone": "(208) 397-4166",
             "website": "https://idahopotato.com/directory/shippers/sunriver-of-idaho-inc",
             "logo": "images/sun-river-of-idaho.png"
         },
         {
             "name": "Aberdeen-Springfield Canal Company",
             "membershipLevel": "non-profit",
-            "address": 144 S Main St, Aberdeen, ID 83210,
-            "phone": (208) 397-4192,
-            "website": https: //www.ascanal.org/,
+            "address": "144 S Main St, Aberdeen, ID 83210",
+            "phone": "(208) 397-4192",
+            "website": "https://www.ascanal.org/",
             "logo": "images/ascc-logo.png"
         }
     ]
