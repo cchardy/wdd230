@@ -407,6 +407,11 @@ label {
     margin: 0 1rem;
 }
 
+.list img {
+    height: 50px;
+    max-width: 100%;
+
+}
 
 #members a:hover {
     text-decoration: underline;
@@ -423,6 +428,6 @@ label {
     border: ridge var(--header-color);
     border-width: 7px;
     padding: 15px;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color2);
     color: var(--text-color2);
 }
