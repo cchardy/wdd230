@@ -293,20 +293,17 @@ footer {
     margin-top: 10px;
 }
 
-
 fieldset {
     border-radius: 5px;
     border: 1px solid #ddd;
     padding: .5rem 2%;
     margin-top: 5px;
-
 }
 
 .join1 input[type="radio"] {
     margin-right: 6px;
     display: block;
     margin: 3px 3px 0px 5px;
-
 }
 
 .join1 input {
