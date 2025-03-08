@@ -66,4 +66,8 @@
     #menu.show::before {
         content: "X";
     }
+
+    .list section img {
+        display: none;
+    }
 }

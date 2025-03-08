@@ -284,6 +284,7 @@ footer {
     border-radius: 5px;
 }
 
+/* Join page */
 .right-sidebar {
     background: #eee;
     grid-column: 2/3;
@@ -369,19 +370,46 @@ label {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
 }
 
 .grid section {
-    border: ridge var(--accent-color2);
-    border-width: 7px;
+    border: 2px solid var(--accent-color2);
     padding: 15px;
     background-color: var(--background-color2);
     color: var(--text-color2);
 }
 
+.grid section>* {
+    margin: 0.1rem;
+}
+
 .grid section p {
     text-align: left;
 }
+
+.grid img {
+    height: 75px;
+    max-width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: .5rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
 
 #members a:hover {
     text-decoration: underline;
