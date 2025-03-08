@@ -1,4 +1,4 @@
-const baseURL = "https://cchardy.github.io/wdd230/chamber/"
+const baseURL = "https://cchardy.github.io/wdd230/chamber//"
 const membersURL = "https://cchardy.github.io/wdd230/chamber/data/members.json"
 
 const gridbutton = document.querySelector("#grid");

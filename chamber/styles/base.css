@@ -356,10 +356,10 @@ label {
 }
 
 /* Directory page */
-.directory {
+.main-directory {
     margin: 1rem auto;
     border: 1px solid var(--accent-color2);
-    padding: 0.5rem;
+    padding: 2rem;
     background-color: var(--background-color);
     text-align: center;
 }
