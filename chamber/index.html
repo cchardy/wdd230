@@ -62,22 +62,30 @@
         <section class="card" id="event">
             <h2>Current Events</h2>
         </section>
-        <section class="card" id="weather">
+        <section class="card" id="weatherCard">
             <h2>Weather</h2>
-            <img id="weatherIcon" src="https://openweathermap.org/img/w/03d.png" alt="Weather Icon">
-            <ul id="weather1">
-                <li>
-                    <label for="temperature">Temperature (°F):</label>
-                    <input type="number" id="temperature" placeholder="Enter temperature">
-                </li>
-                <li>
-                    <label for="windSpeed">Wind Speed (MPH):</label>
-                    <input type="number" id="windSpeed" placeholder="Enter wind speed">
-                </li>
-                <li>
-                    <span id="windchill">Calculate wind chill above</span>
-                </li>
-            </ul>
+            <p>Current conditions: <span id="current-temp"></span></p>
+            <figure class="weatherMap">
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <p>Current Conditions:
+                    <span id="temperature"></span>
+                </p>
+                <p>Temperature Forcast for the Next 3 Days:
+                    <span id="forcast"></span>
+                </p>
+                <ul id="weather1">
+                    <li>
+                        <label for="temperature">Temperature (°F):</label>
+                        <input type="number" id="temperature" placeholder="Enter temperature">
+                    </li>
+                    <li>
+                        <label for="windSpeed">Wind Speed (MPH):</label>
+                        <input type="number" id="windSpeed" placeholder="Enter wind speed">
+                    </li>
+                    <li>
+                        <span id="windchill">Calculate wind chill above</span>
+                    </li>
+                </ul>
         </section>
         <section class="card" id="spotlights">
             <h2>Company Spotlights</h2>
