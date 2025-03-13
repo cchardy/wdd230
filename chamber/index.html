@@ -37,7 +37,10 @@
         <picture>
             <img src="images/logo.png" alt="logo Aberdeen Idaho">
         </picture>
-        <div class="banner">Join us<br>Chamber of Commerce</div>
+        <div id="banner" style="">
+            <button id="bannerToggle"></button>
+            <p>Join Us for a Meet and Greet Wednesday at 7pm!</p>
+        </div>
 
 
     </header>
@@ -62,16 +65,12 @@
         <section class="card" id="event">
             <h2>Current Events</h2>
         </section>
-        <section class="card" id="weatherCard">
+        <section class="card">
             <h2>Weather</h2>
             <figure class="weatherMap">
                 <img id="weather-icon" src="" alt="">
-                <p>Current Conditions:
-                    <span id="temperature"></span>
-                </p>
-                <p>Temperature Forcast for the Next 3 Days:
-                    <span id="forcast"></span>
-                </p>
+                <p>Current Conditions:<span id="temperature"></span></p>
+                <p>Temperature Forcast for the Next 3 Days:<span id="forcast"></span></p>
 
         </section>
         <section class="card" id="spotlights">
@@ -88,6 +87,7 @@
     <script src="scripts/body.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 
 
 </body>

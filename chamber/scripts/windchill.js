@@ -1,11 +1,11 @@
 // Weather for Chamber
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=42.94&lon=-112.84&units=imperial&appid=f91237fb3b7de2e50a66bea388132150`
 
-let currentTemp = document.querySelector("#temperature")
-let weatherIcon = document.querySelector("#weather-icon")
-let currentConditions = document.querySelector("#currentConditions")
-let weatherForcast = document.querySelector("#forcast")
-let windSpeed = document.querySelector("#windspeed")
+let currentTemp = document.querySelector("#temperature");
+let weatherIcon = document.querySelector("#weather-icon");
+let currentConditions = document.querySelector("#currentConditions");
+let weatherForcast = document.querySelector("#forcast");
+let windSpeed = document.querySelector("#windspeed");
 let windChill = document.querySelector("#windchill");
 
 async function apiFetch() {
