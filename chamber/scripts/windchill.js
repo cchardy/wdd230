@@ -1,16 +1,16 @@
-function calculateWindChill(temperature, windSpeed) {
-    return 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
-}
-
-function updateWindChill() {
-
-    const temperature = parseFloat(document.getElementById("temperature").value);
-    const windSpeed = parseFloat(document.getElementById("windSpeed").value);
-
-    if (temperature <= 50 && windSpeed > 3.0) {
-        const windChill = calculateWindChill(temperature, windSpeed);
-        document.getElementById("windChill").textContent = "Wind chill: " + Math.round(windChill * 100) / 100 + " °F";
+function calculateWindchill(temperature, windspeed) {
+    if (windspeed > 3 && temperature <= 50) {
+        let windchill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windspeed, 0.16) + 0.4275 * temperature * Math.pow(windspeed, 0.16);
+        return windchill.toFixed(0);
     } else {
-        document.getElementById("windChill").textContent = "Calculate wind chill above.";
+        return "N/A";
     }
 }
+function updateWindchill() {
+    let temperature = 49;
+    let windSpeed = 5;
+    let windchill = calculateWindchill(temperature, windSpeed);
+    document.getElementById("windchill").innerHTML = `Windchill: ${windchill}&deg;F`;
+
+}
+window.onload = updateWindchill;

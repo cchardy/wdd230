@@ -7,8 +7,8 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector('figcaption');
 const weatherForecast = document.querySelector("#forecast");
 
-let windSpeed = document.querySelector("#windSpeed");
-let windChill = document.querySelector("#windChill");
+let windspeed = document.querySelector("#windspeed");
+let windchill = document.querySelector("#windchill");
 
 async function apiFetch() {
     try {
