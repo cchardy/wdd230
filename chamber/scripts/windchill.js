@@ -1,13 +1,11 @@
 // Weather for Chamber
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=42.94&lon=-112.84&units=imperial&appid=f91237fb3b7de2e50a66bea388132150`
-//const baseURL = "https://cchardy.github.io/wdd230/chamber//"
-//const forcastURL = "https://cchardy.github.io/wdd230/chamber/data/forcast.json"
 
 let currentTemp = document.querySelector("#temperature");
 let weatherIcon = document.querySelector("#weather-icon");
 let captionDesc = document.querySelector('figcaption');
 
-let weatherForcast = document.querySelector("#forcast");
+let weatherForecast = document.querySelector("#forecast");
 let windSpeed = document.querySelector("#windspeed");
 let windChill = document.querySelector("#windchill");
 
