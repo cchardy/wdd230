@@ -30,7 +30,7 @@ async function apiFetch() {
 function displayResults(data) {
     currentTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.list[0].weather[0].description
+    let desc = data.list[0].weather[0].description;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", "Weather Icon");
     captionDesc.textContent = `${desc}`;
@@ -54,7 +54,7 @@ function displayForecast(forecastDays) {
 
     forecastDays.forEach(dayData => {
         const date = new Date(dayData.dt * 1000);
-        const dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
         const temperature = dayData.main.temp;
         const description = dayData.weather[0].description;
 
@@ -64,7 +64,7 @@ function displayForecast(forecastDays) {
             <h4>${dayName}</h4>
             <p>Temperature: ${temperature}&deg;F</p>
             <p>Conditions: ${description}</p>
-          `;
+            `;
         forecastContainer.appendChild(dayElement);
     });
 }
