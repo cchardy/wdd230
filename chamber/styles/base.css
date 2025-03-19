@@ -431,3 +431,17 @@ label {
     background-color: var(--accent-color2);
     color: var(--text-color2);
 }
+
+#banner {
+    border: .5rem solid var(--color);
+    color: var(--accent-color);
+    background-color: var(--accent-color2);
+    font-weight: bold;
+}
+
+#bannerToggle {
+    float: right;
+    background: none;
+    border: none;
+    padding: 5px;
+}
