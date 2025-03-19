@@ -4,8 +4,8 @@ const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=42.94&lon
 
 const currentTemp = document.querySelector("#temperature");
 const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector('figcaption');
-const weatherForecast = document.querySelector("#forecast");
+let captionDesc = document.querySelector('figcaption');
+let weatherForecast = document.querySelector("#forecast");
 
 let windspeed = document.querySelector("#windspeed");
 let windchill = document.querySelector("#windchill");
@@ -27,12 +27,12 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-    let desc = data.weather[0].description
-    weatherForecast.innerHTML = '`${parseInt(data.list[1].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[2].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[3].main.temp.toFixed(0))}&deg;F`'
-    weatherIcon.setAttribute("src", iconsrc)
-    weatherIcon.setAttribute("alt", "Weather Icon")
-    captionDesc.textContent = `${desc}`
+    currentTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const desc = data.list[0].weather[0].description;
+    weatherForecast.innerHTML = `${parseInt(data.list[1].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[2].main.temp.toFixed(0))}&deg;F | ${parseInt(data.list[3].main.temp.toFixed(0))}&deg;F`;
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", "Weather Icon");
+    captionDesc.textContent = `${desc}`;
 }
 apiFetch()
