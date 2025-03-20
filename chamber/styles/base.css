@@ -432,6 +432,11 @@ label {
     color: var(--text-color2);
 }
 
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
 #banner {
     border: .5rem solid var(--color);
     color: var(--accent-color);
@@ -443,5 +448,5 @@ label {
     float: right;
     background: none;
     border: none;
-    padding: 5px;
+    padding:
 }

@@ -1,20 +1,14 @@
-let banner = document.querySelector("#banner")
-let bannerButton = document.querySelector("#bannerToggle")
+document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("banner");
+    const closeButton = document.getElementById("close-banner");
 
-function showBanner() {
-    const today = new Date().getDay()
-    const targetDays = [1, 2, 3]
+    const today = new Date().getDay(); // 1 = Monday, 2 = Tuesday, 3 = Wednesday
 
-    if (targetDays.includes(today)) {
-        banner.style.display = "block"
-    } else {
-        banner.style.display = "none"
+    if (today >= 1 && today <= 3) {
+        banner.classList.remove("hidden");
     }
-}
 
-bannerButton.addEventListener("click", () => {
-    bannerButton.remove()
-    banner.remove()
-})
-
-showBanner();
+    closeButton.addEventListener("click", () => {
+        banner.style.display = "none";
+    });
+});
