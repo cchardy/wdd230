@@ -449,3 +449,9 @@ figcaption {
     background: none;
     border: none;
 }
+
+.info img {
+    height: 50px;
+    max-width: 100%;
+
+}

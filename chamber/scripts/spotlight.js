@@ -1,26 +1,6 @@
 const baseURL = "https://cchardy.github.io/wdd230/chamber//"
 const membersURL = "https://cchardy.github.io/wdd230/chamber/data/members.json"
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            let index = 0;
-            const infoDiv = document.getElementById('info');
-
-            function rotateInfo() {
-                infoDiv.textContent = data[index].message;
-                index = (index + 1) % data.length;
-            }
-
-            rotateInfo(); // Show the first message immediately
-            setInterval(rotateInfo, 3000); // Rotate every 3 seconds
-        })
-        .catch(error => {
-            console.error('Error fetching JSON:', error);
-            document.getElementById('info').textContent = 'Failed to load information.';
-        });
-});
 async function getMembers() {
     const response = await fetch(membersURL)
     if (response.ok) {
@@ -30,7 +10,6 @@ async function getMembers() {
 }
 
 getMembers()
-
 
 const displayMembers = (members) => {
 
@@ -61,3 +40,24 @@ const displayMembers = (members) => {
         memberCards.appendChild(card)
     })
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch(displayMembers)
+        .then(response => response.json())
+        .then(data => {
+            let index = 0;
+            const infoDiv = document.getElementById('info');
+
+            function rotateInfo() {
+                infoDiv.textContent = data[index].message;
+                index = (index + 1) % data.length;
+            }
+
+            rotateInfo(); // Show the first message immediately
+            setInterval(rotateInfo, 10000); // Rotate every 10 seconds
+        })
+        .catch(error => {
+            console.error('Error fetching JSON:', error);
+            document.getElementById('info').textContent = 'Failed to load information.';
+        });
+});
