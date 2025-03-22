@@ -7,7 +7,7 @@ function calculateWindchill(temperature, windspeed) {
     }
 }
 function updateWindchill() {
-    let temperature = 36;
+    let temperature = 47;
     let windSpeed = 10;
     let windchill = calculateWindchill(temperature, windSpeed);
     document.getElementById("windchill").innerHTML = `Windchill: ${windchill}&deg;F`;

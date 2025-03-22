@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             rotateInfo(); // Show the first message immediately
-            setInterval(rotateInfo, 10000); // Rotate every 10 seconds
+            setInterval(rotateInfo, 3000); // Rotate every 3 seconds
         })
         .catch(error => {
             console.error('Error fetching JSON:', error);
