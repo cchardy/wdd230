@@ -7,10 +7,6 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector('figcaption');
 const weatherForecast = document.querySelector("#forecast");
 
-const windspeed = document.querySelector("#windspeed");
-let windchill = document.querySelector("#windchill");
-
-
 async function apiFetch() {
     try {
         const response = await fetch(url)
@@ -35,6 +31,8 @@ function displayResults(data) {
     weatherIcon.setAttribute("alt", "Weather Icon");
     captionDesc.textContent = `${desc}`;
 }
+
+apiFetch()
 
 fetch(forecast)
     .then(response => response.json())
