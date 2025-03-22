@@ -1,4 +1,3 @@
-const baseURL = "https://cchardy.github.io/wdd230/chamber//"
 const membersURL = "https://cchardy.github.io/wdd230/chamber/data/members.json"
 
 async function getMembers() {
