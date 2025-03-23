@@ -163,6 +163,7 @@ main section:nth-child(3) {
     width: 100%;
     height: auto;
     max-width: 1500px;
+    position: center;
     margin: 0 auto;
     border-radius: 16px;
     border-radius: 6px;
