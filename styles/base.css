@@ -46,7 +46,7 @@ h3 {
 nav,
 header,
 footer {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     border-radius: 16px;
 }
@@ -156,6 +156,9 @@ main section:nth-child(3) {
 .hero {
     margin: 10px auto;
     position: relative;
+    width: 900px;
+    max-width: 100%;
+    display: block;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -163,7 +166,6 @@ main section:nth-child(3) {
     width: 100%;
     height: auto;
     max-width: 1500px;
-    position: center;
     margin: 0 auto;
     border-radius: 16px;
     border-radius: 6px;
