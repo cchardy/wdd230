@@ -443,15 +443,3 @@ figcaption {
     background-color: var(--accent-color2);
     font-weight: bold;
 }
-
-#bannerToggle {
-    float: right;
-    background: none;
-    border: none;
-}
-
-.info img {
-    height: 50px;
-    max-width: 100%;
-
-}
