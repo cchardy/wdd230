@@ -156,7 +156,7 @@ main section:nth-child(3) {
 .hero {
     margin: 10px auto;
     position: relative;
-    width: 900px;
+    width: 1000px;
     max-width: 100%;
     display: block;
     border: 1px solid rgba(0, 0, 0, .1);
