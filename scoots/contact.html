@@ -15,8 +15,8 @@
         content="Carmen Hardy student website for WDD230 Scoots Rentals - Where every ride is an adventure waiting to happen!">
     <meta property="og:image" content="https://cchardy.github.io/wdd230/scoots/images/">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -28,7 +28,7 @@
 
     <header class="nav">
         <div class="nav-brand">
-            <img src="" alt="company logo" width="" height="" loading="lazy" />
+            <img src="images/couple_cartoon_scooter.jpg" alt="company logo" width="700" height=100% loading="lazy" />
             <h1>Scoots Rentals</h1>
         </div>
         <div class="nav-box">
@@ -39,7 +39,6 @@
                         <li><a href="#" title="Home">Home</a></li>
                         <li><a href="rentals.html" title="Rentals">Rentals</a></li>
                         <li><a href="/reservations.html" title="Reservations">Reservations</a></li>
-                        <li><a href="/tours.html" title="Tours">Tours</a></li>
                         <li><a href="/contact.html" target="_blank" title="contact">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -52,7 +51,84 @@
         </div>
     </header>
     <main>
+        <section class="contact-hero">
+            <div class="overlay">
+                <h2>Contact Us</h2>
+                <p>Have a question or need more information? We are here to help!</p>
+            </div>
+        </section>
+        <section class="contact-area">
 
+            <h2>We’d Love To Hear From You!</h2>
+            <div class="contact-body">
+                <div class="contact-info">
+                    <div class="address-info">
+                        <h3>Visit us at both locations</h3>
+                        <div class="hours card-hours">
+                            <h5>HOURS OF OPERATION:</h5>
+                            <p>MONDAY-SATURDAY 8AM-5PM</p>
+                            <p>SUNDAY – BY APPOINTMENT</p>
+                        </div>
+                        <div class="address">
+                            <address>
+                                <div class="address-title">Scoots @ Playa del Carmen-Cozumel</div>
+                                <div class="address-group">
+                                    <div class="street">
+                                        <p>5 Ave N Entre Calle 2</p>
+                                        <p>77600 Cozumel, Q.R. Mexico</p>
+                                    </div>
+                                </div>
+
+                                <a href="tel:+525558691234" target="_self">
+                                    <span class="value">+52 555 869 1234</span>
+                                </a>
+                            </address>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.892018422959!2d-86.95356976523163!3d20.51161250714187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1711467670660!5m2!1sen!2sus"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <address>
+                                <div class="address-title">Scoots @ Puerta Maya</div>
+                                <div class="address-group">
+                                    <div class="street">
+                                        <p>5 Ave N Entre Calle 2</p>
+                                        <p>77600 Cozumel, Q.R. Mexico</p>
+                                    </div>
+                                </div>
+                                <a href="tel:+525559695678">
+                                    <span class="value">+52 555 969 5678</span>
+                                </a>
+                            </address>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2079.9062928522703!2d-86.975759600473!3d20.475710187666206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1711467876877!5m2!1sen!2sus"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form method="get" action="#" onsubmit="openModal();; return false;">
+                        <fieldset>
+                            <legend>Quick Contact</legend>
+                            <label class="top">Name* <input type="text" id="name" name="name" placeholder="Name"
+                                    required /></label>
+                            <label class="top">Mobile Phone
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    placeholder="5559991234" /></label>
+                            <label class="top">Email*
+                                <input type="email" id="email" name="email" placeholder="your-email@valid-email.com"
+                                    required title="Please enter a valid email address" /></label>
+                            <label class="top">Subject* <input type="text" id="subject" name="subject"
+                                    required /></label>
+                            <label class="top">Message*
+                                <textarea id="message" name="message" placeholder="Anything else you want us to know..."
+                                    required></textarea>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-primary" type="submit">Email us!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <iframe
@@ -67,7 +143,6 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/rentals.html">Rentals</a></li>
                 <li><a href="/reservations.html">Reservations</a></li>
-                <li><a href="/tours.html">Tours</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
@@ -94,9 +169,8 @@
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/hamburger.js"></script>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/forecast.js"></script>
+    <script src="scripts/weather.js"></script>
     </div>
 </body>
 
