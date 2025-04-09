@@ -82,3 +82,19 @@ function getNextDay3(data) {
 
 
 apiFetch();
+
+function weatherBanner() {
+    const banner = document.getElementById("banner");
+    const closeBannerBtn = document.getElementById("closeBanner");
+
+    // // Set initial visibility
+    const isBannerVisible = true;
+    banner.classList.toggle("banner", isBannerVisible);
+    banner.classList.toggle("banner-hide", !isBannerVisible);
+
+    // Close the banner when the close button is clicked
+    closeBannerBtn.addEventListener("click", function () {
+        banner.classList.add("banner-hide");
+    });
+}
+weatherBanner();

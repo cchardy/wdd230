@@ -197,7 +197,6 @@ main section {
 
 .weather-container {
     display: grid;
-    width: 400px;
     justify-content: center;
     font-size: 0.8rem;
     line-height: 1rem;
