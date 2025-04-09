@@ -425,909 +425,910 @@ footer section {
         width: 100%;
         background-position: center;
         background-size: cover;
-        background-image: url("../images/couple4_scooter.jpg");
-    }
+        background-image: url("../images/couple with jeep ocean.png;
 
-    @media (min-width: 640px) {
-        .hero-section {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            grid-template-rows: repeat(1, minmax(0, 1fr));
         }
 
-        .hero-info h2 {
-            font-size: 3rem;
-            line-height: 1;
-            line-height: 1;
+        @media (min-width: 640px) {
+            .hero-section {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-rows: repeat(1, minmax(0, 1fr));
+            }
+
+            .hero-info h2 {
+                font-size: 3rem;
+                line-height: 1;
+                line-height: 1;
+            }
+
+            .hero-info p {
+                margin-top: 1.25rem;
+                max-width: 36rem;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+
+            .hero-image {
+                height: auto;
+            }
         }
 
-        .hero-info p {
-            margin-top: 1.25rem;
-            max-width: 36rem;
-            font-size: 1.125rem;
-            line-height: 1.75rem;
+        @media (min-width: 768px) {
+            .hero-info h2 {
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+
+            .hero-info p {
+                margin-top: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+
+            .btn {
+                padding: 1rem 2.5rem;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+
+            .hero-image {
+                height: 100vh;
+            }
         }
 
-        .hero-image {
-            height: auto;
-        }
-    }
+        @media (min-width: 1024px) {
+            .hero-info {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
 
-    @media (min-width: 768px) {
-        .hero-info h2 {
-            font-size: 3.75rem;
-            line-height: 1;
+            .hero-info h2 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .hero-image {
+                width: 100%;
+            }
         }
 
-        .hero-info p {
+        .contact-hero {
+            background-image: url("../images/girl_scooter.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .reservations-hero {
+            background-image: url("../images/couple3_scooter.avif");
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .rental-hero {
+            background-image: url("../images/couple2_scooter.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 2.5rem;
+        }
+
+        .overlay p {
             margin-top: 1.25rem;
             font-size: 1.25rem;
             line-height: 1.75rem;
+            text-align: center;
         }
 
-        .btn {
-            padding: 1rem 2.5rem;
-            font-size: 1.125rem;
-            line-height: 1.75rem;
+        .home-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px 80px;
+            background-color: var(--accent2-color);
+            color: var(--text-color-header);
         }
 
-        .hero-image {
-            height: 100vh;
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .hero-info {
-            padding-left: 4rem;
-            padding-right: 4rem;
+        .home-info h2 {
+            font-size: 2em;
+            font-weight: 700;
+            margin: 15px 0;
         }
 
-        .hero-info h2 {
-            margin-left: 0;
-            margin-right: 0;
+        .home-info h3 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 5px 0;
         }
 
-        .hero-image {
-            width: 100%;
+        .home-info p {
+            margin: 10px 0;
+
         }
-    }
 
-    .contact-hero {
-        background-image: url("../images/girl_scooter.jpg");
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        height: 50vh;
-    }
+        .home-info h4,
+        h5 {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 5px 0;
+        }
 
-    .reservations-hero {
-        background-image: url("../images/couple3_scooter.avif");
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        height: 50vh;
-    }
-
-    .rental-hero {
-        background-image: url("../images/couple2_scooter.jpg");
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        height: 50vh;
-    }
-
-    .overlay {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        width: 100%;
-        height: 100%;
-    }
-
-    .overlay h2 {
-        font-size: 2.25rem;
-        font-weight: 800;
-        letter-spacing: -0.025em;
-        line-height: 2.5rem;
-    }
-
-    .overlay p {
-        margin-top: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        text-align: center;
-    }
-
-    .home-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px 80px;
-        background-color: var(--accent2-color);
-        color: var(--text-color-header);
-    }
-
-    .home-info h2 {
-        font-size: 2em;
-        font-weight: 700;
-        margin: 15px 0;
-    }
-
-    .home-info h3 {
-        font-size: 1.5em;
-        font-weight: 600;
-        margin: 5px 0;
-    }
-
-    .home-info p {
-        margin: 10px 0;
-
-    }
-
-    .home-info h4,
-    h5 {
-        font-size: 1.2em;
-        font-weight: 600;
-        margin: 5px 0;
-    }
-
-    .home-info div {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 20px 0;
-    }
-
-    @media (min-width: 768px) {
         .home-info div {
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
         }
-    }
 
-    .home-rides-info,
-    .places-info,
-    .rental-rides-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0 30px;
-        color: var(--text-color-header);
-    }
+        @media (min-width: 768px) {
+            .home-info div {
+                flex-direction: row;
+            }
+        }
 
-    .separator::before,
-    .separator::after {
-        background-color: #cbd5e1;
-        content: "";
-        display: inline-block;
-        height: 3px;
-        position: relative;
-        vertical-align: middle;
-        width: 50%;
-    }
+        .home-rides-info,
+        .places-info,
+        .rental-rides-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 30px;
+            color: var(--text-color-header);
+        }
 
-    .separator::before {
-        right: 0.5em;
-        margin-left: -50%;
-    }
+        .separator::before,
+        .separator::after {
+            background-color: #cbd5e1;
+            content: "";
+            display: inline-block;
+            height: 3px;
+            position: relative;
+            vertical-align: middle;
+            width: 50%;
+        }
 
-    .separator::after {
-        left: 0.5em;
-        margin-right: -50%;
-    }
+        .separator::before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
 
-    /* Cards */
-    .card-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 100px 50px;
-        padding: 100px 50px;
-    }
+        .separator::after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
 
-    .card-container .card {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 350px;
-        max-width: 100%;
-        height: 400px;
-        background: #FFF;
-        border-radius: 20px;
-        transition: 0.5s;
-        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-    }
+        /* Cards */
+        .card-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px 50px;
+            padding: 100px 50px;
+        }
 
-    .card-container .card .card-content:hover {
-        height: 500px;
-    }
+        .card-container .card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 350px;
+            max-width: 100%;
+            height: 400px;
+            background: #FFF;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        }
 
-    .card-container .card .img-box {
-        position: absolute;
-        top: 20px;
-        width: 300px;
-        height: 220px;
-        background: #333;
-        border-radius: 12px;
-        overflow: hidden;
-        transition: 0.5s;
-    }
+        .card-container .card .card-content:hover {
+            height: 500px;
+        }
 
-    .card-container .card :hover .img-box {
-        top: -100px;
-        scale: 0.75;
-        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-    }
+        .card-container .card .img-box {
+            position: absolute;
+            top: 20px;
+            width: 300px;
+            height: 220px;
+            background: #333;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
 
-    .card-container .card .img-box img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+        .card-container .card :hover .img-box {
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
 
-    .card-container .card .card-content {
-        position: absolute;
-        top: 252px;
-        width: 100%;
-        height: 35px;
-        padding: 0 30px;
-        text-align: center;
-        overflow: hidden;
-        transition: 0.5s;
-    }
+        .card-container .card .img-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .card-container .card :hover .card-content {
-        top: 130px;
-        height: 250px;
-    }
+        .card-container .card .card-content {
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            height: 35px;
+            padding: 0 30px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
 
-    .card-container .card .card-content h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: whitesmoke;
-    }
+        .card-container .card :hover .card-content {
+            top: 130px;
+            height: 250px;
+        }
 
-    .card-container .card .card-content p {
-        color: #333;
-    }
+        .card-container .card .card-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: whitesmoke;
+        }
 
-    .card-container .card .card-content a {
-        position: relative;
-        top: 15px;
-        display: inline-block;
-        padding: 12px 25px;
-        text-decoration: none;
-        background: #181818;
-        color: #fff;
-        font-weight: 500;
-    }
+        .card-container .card .card-content p {
+            color: #333;
+        }
 
-    .card-container .card .card-content a:hover {
-        opacity: 0.8;
-    }
+        .card-container .card .card-content a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            background: #181818;
+            color: #fff;
+            font-weight: 500;
+        }
 
-    .card-hours {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        max-width: 300px;
-    }
+        .card-container .card .card-content a:hover {
+            opacity: 0.8;
+        }
 
-    .card h3 {
-        font-size: 1.1em;
-        font-weight: 700;
-        margin: 10px 0;
-    }
+        .card-hours {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 300px;
+        }
 
-    .card h4 {
-        font-size: 1em;
-        font-weight: 600;
-        margin: 0;
-    }
+        .card h3 {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
 
-    .card p {
-        font-size: 0.85em;
-        margin: 5px 0;
-    }
+        .card h4 {
+            font-size: 1em;
+            font-weight: 600;
+            margin: 0;
+        }
 
-    .card img {
-        width: 300px;
-        height: auto;
-        max-height: 225px;
-    }
+        .card p {
+            font-size: 0.85em;
+            margin: 5px 0;
+        }
 
-    .card-body {
-        padding: 0 0 10px;
-        flex: 1;
-    }
+        .card img {
+            width: 300px;
+            height: auto;
+            max-height: 225px;
+        }
 
-    .places-info img {
-        width: 100%;
-        height: 275px;
-    }
+        .card-body {
+            padding: 0 0 10px;
+            flex: 1;
+        }
 
-    .places-info .card:nth-child(2) {
-        width: 375px;
-    }
+        .places-info img {
+            width: 100%;
+            height: 275px;
+        }
 
-    .cost {
-        font-size: 2em;
-        font-weight: 800;
-    }
+        .places-info .card:nth-child(2) {
+            width: 375px;
+        }
 
-    .cost-type {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+        .cost {
+            font-size: 2em;
+            font-weight: 800;
+        }
 
-    .cost-type p {
-        margin: 0;
-    }
+        .cost-type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
 
-    .cost-sp {
-        font-size: 2.5em;
-        font-weight: 600;
-        color: lightgray;
-    }
+        .cost-type p {
+            margin: 0;
+        }
 
-    .reservations-banner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 50px;
-    }
+        .cost-sp {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: lightgray;
+        }
 
-    .reservations-banner.banner-one div {
-        text-align: center;
-        padding: 20px;
-        order: 1;
-    }
-
-    .reservations-banner.banner-two div {
-        text-align: center;
-        padding: 20px;
-        order: 2;
-    }
-
-    .reservations-banner.banner-one img {
-        width: 400px;
-        height: auto;
-        order: 2;
-    }
-
-    .reservations-banner.banner-two img {
-        width: 400px;
-        height: auto;
-        order: 1;
-    }
-
-    .banner-one {
-        background-color: var(--accent3-color);
-        color: var(--text-color-header);
-    }
-
-    .banner-two {
-        background-color: var(--accent2-color);
-        color: var(--text-color-header);
-    }
-
-    @media (min-width: 768px) {
         .reservations-banner {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
         }
-    }
 
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+        .reservations-banner.banner-one div {
+            text-align: center;
+            padding: 20px;
+            order: 1;
+        }
 
-    .modal-content {
-        background-color: var(--success-background);
-        color: var(--success-text);
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 400px;
-    }
+        .reservations-banner.banner-two div {
+            text-align: center;
+            padding: 20px;
+            order: 2;
+        }
 
-    .modal-content .icon svg {
-        margin-right: 1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: currentColor;
-    }
+        .reservations-banner.banner-one img {
+            width: 400px;
+            height: auto;
+            order: 2;
+        }
 
-    .modal-content p {
-        text-align: center;
-    }
+        .reservations-banner.banner-two img {
+            width: 400px;
+            height: auto;
+            order: 1;
+        }
 
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+        .banner-one {
+            background-color: var(--accent3-color);
+            color: var(--text-color-header);
+        }
 
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+        .banner-two {
+            background-color: var(--accent2-color);
+            color: var(--text-color-header);
+        }
 
-    /*Contact Page Styles & Reservations Page*/
-    .contact-area,
-    .reservations-area {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 20px 30px;
-        color: var(--text-color-header);
-    }
+        @media (min-width: 768px) {
+            .reservations-banner {
+                display: flex;
+                flex-direction: row;
+            }
+        }
 
-    .contact-area h2,
-    .reservations-area h3 {
-        font-size: 1.5em;
-        font-weight: 600;
-        margin: 25px 0;
-        text-align: center;
-    }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
 
-    .contact-area .contact-body {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+        .modal-content {
+            background-color: var(--success-background);
+            color: var(--success-text);
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+        }
 
-    .reservations-area .reservations-body {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+        .modal-content .icon svg {
+            margin-right: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+        }
 
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 20px;
-        order: 1;
-        width: 100%;
-        max-width: 600px;
-    }
+        .modal-content p {
+            text-align: center;
+        }
 
-    .reservations-info {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 20px;
-        order: 1;
-        width: 100%;
-        max-width: 800px;
-    }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-    .agreement {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        order: 1;
-    }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    .agreement h2 {
-        text-align: center;
-        margin-bottom: 5px;
-    }
+        /*Contact Page Styles & Reservations Page*/
+        .contact-area,
+        .reservations-area {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 20px 30px;
+            color: var(--text-color-header);
+        }
 
-    .contact-info h3 {
-        text-align: center;
-    }
+        .contact-area h2,
+        .reservations-area h3 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 25px 0;
+            text-align: center;
+        }
 
-    .contact-form,
-    .reservations-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        order: 2;
-        width: 100%;
-        max-width: 600px;
-    }
-
-    @media (min-width: 1024px) {
         .contact-area .contact-body {
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
         }
 
         .reservations-area .reservations-body {
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 20px;
+            order: 1;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .reservations-info {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 20px;
+            order: 1;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .agreement {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            order: 1;
+        }
+
+        .agreement h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .contact-info h3 {
+            text-align: center;
+        }
+
+        .contact-form,
+        .reservations-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            order: 2;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-area .contact-body {
+                flex-direction: row;
+            }
+
+            .reservations-area .reservations-body {
+                flex-direction: row;
+            }
+        }
+
+        .reservations-area p {
+            text-align: center;
+        }
+
+        .hours {
+            margin: 25px auto;
+        }
+
+        .hours h5 {
+            font-size: 1em;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .hours p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .reservations-fun {
+            text-align: center;
+            color: var(--text-color-header);
+            order: 3;
+        }
+
+        .reservations-fun img {
+            width: 75%;
+            height: auto;
+        }
+
+        iframe {
+            width: auto;
+            height: 300px;
+            border: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+            width: 100%;
+        }
+
+        fieldset {
+            position: relative;
+            margin: 1rem 0;
+            border: 1px solid var(--text-color-header);
+            border-radius: 10px;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        fieldset:last-of-type {
+            margin-bottom: 5px;
+        }
+
+        legend {
+            color: var(--text-color-header);
+            margin: 0 1rem;
+            padding: 0 0.5rem;
+        }
+
+        fieldset label.top,
+        fieldset div {
+            display: block;
+            padding-top: 1rem;
+            color: var(--text-color-header);
+            font-size: 0.8rem;
+            width: 100%;
+            max-width: 18rem;
+        }
+
+        fieldset label.top input,
+        fieldset label.top textarea,
+        fieldset label.top select {
+
+            display: block;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: 0.75rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: var(--text-color-main);
+            width: 100%;
+        }
+
+        fieldset label.sbs {
+            display: block;
+            padding: 0.7rem 0.3rem 0;
+            color: var(--text-color-header);
+        }
+
+        fieldset label.rad {
+            display: block;
+            padding: 0.15rem 0;
+            color: var(--text-color-header);
+        }
+
+        fieldset label.top input:required,
+        fieldset label.top select:required,
+        fieldset label.top textarea:required {
+            border-left: var(--error-text) solid 6px;
+        }
+
+        fieldset label.top input:required:valid,
+        fieldset label.top select:required,
+        fieldset label.top textarea:required:valid {
+            border-left: var(--success-text) solid 6px;
+        }
+
+        /* Success Banner */
+        .email-banner {
+            padding: 0.75rem 1rem;
+            border-top: 4px solid var(--success-text);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            background-color: var(--success-background);
+            z-index: 1000;
+            width: 75%;
+        }
+
+        .email-container {
+            display: flex;
+        }
+
+        .email-container p {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-color-header);
+        }
+
+        .email-container .icon {
+            padding: 0.25rem 0;
+        }
+
+        .email-container .icon svg {
+            margin-right: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+        }
+
+        .attributions {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 50px;
+            color: var(--text-color-header);
+        }
+
+        .attributions h3 {
+            margin: 0;
+        }
+
+        /* Banner on home page */
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--accent1-color);
+            color: var(--text-color-header);
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        .banner-show {
+            display: flex;
+        }
+
+        .banner-hide {
+            display: none;
+        }
+
+        .banner h2 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        #closeBanner {
+            background: none;
+            color: var(--text-color-header);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        #closeBanner:hover {
+            color: var(--text-color-secondary);
+        }
+
+        .weather-container {
+            display: flex;
+            justify-content: center;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            background-color: var(--accent2-color);
+            color: var(--text-color-header);
+        }
+
+        .weather {
+            display: flex;
+            justify-content: center;
+            margin: 0 15px;
+            padding: 5px 20px;
+            gap: 15px;
+        }
+
+        .weatherGroup span,
+        .futureWeatherGroup span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .weatherGroup img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .temp-day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tempDiv span {
+            text-transform: lowercase;
+            font-size: 0.65rem;
+        }
+
+        .temp-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-weight: 600;
+        }
+
+        .temp-group span:first-child {
+            color: var(--accent5-color);
+        }
+
+        .temp-group span:last-child {
+            color: var(--accent5-color);
+        }
+
+        /* Pricing Table */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+            color: var(--text-color-header);
+            order: 2;
+        }
+
+        table {
+            margin: 10px auto;
+            border: thin solid var(--border);
+            box-shadow: 0 0 10px var(--shadow);
+            border-collapse: collapse;
+            font-size: 0.75rem;
+        }
+
+        caption {
+            padding: 10px;
+            caption-side: bottom;
+            color: var(--back);
+            font-size: 0.85rem;
+        }
+
+        thead tr:first-child th {
+            background-color: var(--back);
+            color: var(--text-color-header);
+            font-size: 1.3rem;
+            padding: 15px;
+        }
+
+        thead tr:nth-child(2) th:first-child {
+            background-color: var(--back);
+            color: var(--forelight);
+            padding: 15px;
+        }
+
+        th,
+        td {
+            padding: 7px 15px;
+            border: 1px solid var(--borderlight);
+        }
+
+        th {
+            background-color: var(--back2);
+            padding: 15px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--zebra);
+        }
+
+        tbody tr td:first-child {
+            font-weight: bold;
+        }
+
+        .rental-benefits {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px 25px;
+            color: var(--text-color-header);
+            background-color: var(--accent2-color);
+        }
+
+        .rental-benefits h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .rental-benefits ul,
+        .agreement ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .rental-benefits li,
+        .agreement li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            line-height: 1.6;
+            gap: 10px;
+        }
+
+        .rental-benefits li::before,
+        .agreement li::before {
+            content: "";
+            display: inline-block;
+            width: 0.875rem;
+            height: 0.875rem;
+            background-size: cover;
+        }
+
+        .check-svg {
+            width: 0.875rem;
+            height: 0.875rem;
+            color: var(--accent3-color);
         }
     }
-
-    .reservations-area p {
-        text-align: center;
-    }
-
-    .hours {
-        margin: 25px auto;
-    }
-
-    .hours h5 {
-        font-size: 1em;
-        font-weight: 600;
-        margin: 5px 0;
-    }
-
-    .hours p {
-        font-size: 0.9em;
-        margin: 5px 0;
-    }
-
-    .reservations-fun {
-        text-align: center;
-        color: var(--text-color-header);
-        order: 3;
-    }
-
-    .reservations-fun img {
-        width: 75%;
-        height: auto;
-    }
-
-    iframe {
-        width: auto;
-        height: 300px;
-        border: none;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 10px;
-        width: 100%;
-    }
-
-    fieldset {
-        position: relative;
-        margin: 1rem 0;
-        border: 1px solid var(--text-color-header);
-        border-radius: 10px;
-        padding: 0.5rem;
-        width: 100%;
-        max-width: 20rem;
-    }
-
-    fieldset:last-of-type {
-        margin-bottom: 5px;
-    }
-
-    legend {
-        color: var(--text-color-header);
-        margin: 0 1rem;
-        padding: 0 0.5rem;
-    }
-
-    fieldset label.top,
-    fieldset div {
-        display: block;
-        padding-top: 1rem;
-        color: var(--text-color-header);
-        font-size: 0.8rem;
-        width: 100%;
-        max-width: 18rem;
-    }
-
-    fieldset label.top input,
-    fieldset label.top textarea,
-    fieldset label.top select {
-
-        display: block;
-        font-size: 1rem;
-        border: solid 1px #999;
-        border-radius: 4px;
-        padding: 0.75rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        color: var(--text-color-main);
-        width: 100%;
-    }
-
-    fieldset label.sbs {
-        display: block;
-        padding: 0.7rem 0.3rem 0;
-        color: var(--text-color-header);
-    }
-
-    fieldset label.rad {
-        display: block;
-        padding: 0.15rem 0;
-        color: var(--text-color-header);
-    }
-
-    fieldset label.top input:required,
-    fieldset label.top select:required,
-    fieldset label.top textarea:required {
-        border-left: var(--error-text) solid 6px;
-    }
-
-    fieldset label.top input:required:valid,
-    fieldset label.top select:required,
-    fieldset label.top textarea:required:valid {
-        border-left: var(--success-text) solid 6px;
-    }
-
-    /* Success Banner */
-    .email-banner {
-        padding: 0.75rem 1rem;
-        border-top: 4px solid var(--success-text);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        background-color: var(--success-background);
-        z-index: 1000;
-        width: 75%;
-    }
-
-    .email-container {
-        display: flex;
-    }
-
-    .email-container p {
-        margin: 0;
-        padding: 0;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--text-color-header);
-    }
-
-    .email-container .icon {
-        padding: 0.25rem 0;
-    }
-
-    .email-container .icon svg {
-        margin-right: 1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: currentColor;
-    }
-
-    .attributions {
-        display: flex;
-        flex-direction: column;
-        padding: 15px 50px;
-        color: var(--text-color-header);
-    }
-
-    .attributions h3 {
-        margin: 0;
-    }
-
-    /* Banner on home page */
-    .banner {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--accent1-color);
-        color: var(--text-color-header);
-        padding: 15px;
-        z-index: 1000;
-    }
-
-    .banner-show {
-        display: flex;
-    }
-
-    .banner-hide {
-        display: none;
-    }
-
-    .banner h2 {
-        text-align: center;
-        font-size: 1.2rem;
-        margin: 0;
-    }
-
-    #closeBanner {
-        background: none;
-        color: var(--text-color-header);
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 1.5rem;
-    }
-
-    #closeBanner:hover {
-        color: var(--text-color-secondary);
-    }
-
-    .weather-container {
-        display: flex;
-        justify-content: center;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        background-color: var(--accent2-color);
-        color: var(--text-color-header);
-    }
-
-    .weather {
-        display: flex;
-        justify-content: center;
-        margin: 0 15px;
-        padding: 5px 20px;
-        gap: 15px;
-    }
-
-    .weatherGroup span,
-    .futureWeatherGroup span {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .weatherGroup img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .temp-day {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tempDiv span {
-        text-transform: lowercase;
-        font-size: 0.65rem;
-    }
-
-    .temp-group {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        font-weight: 600;
-    }
-
-    .temp-group span:first-child {
-        color: var(--accent5-color);
-    }
-
-    .temp-group span:last-child {
-        color: var(--accent5-color);
-    }
-
-    /* Pricing Table */
-    .pricing {
-        display: flex;
-        justify-content: center;
-        padding: 0 20px;
-        color: var(--text-color-header);
-        order: 2;
-    }
-
-    table {
-        margin: 10px auto;
-        border: thin solid var(--border);
-        box-shadow: 0 0 10px var(--shadow);
-        border-collapse: collapse;
-        font-size: 0.75rem;
-    }
-
-    caption {
-        padding: 10px;
-        caption-side: bottom;
-        color: var(--back);
-        font-size: 0.85rem;
-    }
-
-    thead tr:first-child th {
-        background-color: var(--back);
-        color: var(--text-color-header);
-        font-size: 1.3rem;
-        padding: 15px;
-    }
-
-    thead tr:nth-child(2) th:first-child {
-        background-color: var(--back);
-        color: var(--forelight);
-        padding: 15px;
-    }
-
-    th,
-    td {
-        padding: 7px 15px;
-        border: 1px solid var(--borderlight);
-    }
-
-    th {
-        background-color: var(--back2);
-        padding: 15px;
-    }
-
-    td {
-        text-align: center;
-    }
-
-    tbody tr:nth-child(even) {
-        background-color: var(--zebra);
-    }
-
-    tbody tr td:first-child {
-        font-weight: bold;
-    }
-
-    .rental-benefits {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding: 20px 25px;
-        color: var(--text-color-header);
-        background-color: var(--accent2-color);
-    }
-
-    .rental-benefits h2 {
-        font-size: 1.5em;
-        font-weight: 600;
-        margin: 5px 0;
-    }
-
-    .rental-benefits ul,
-    .agreement ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .rental-benefits li,
-    .agreement li {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        line-height: 1.6;
-        gap: 10px;
-    }
-
-    .rental-benefits li::before,
-    .agreement li::before {
-        content: "";
-        display: inline-block;
-        width: 0.875rem;
-        height: 0.875rem;
-        background-size: cover;
-    }
-
-    .check-svg {
-        width: 0.875rem;
-        height: 0.875rem;
-        color: var(--accent3-color);
-    }
-}
