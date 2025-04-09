@@ -22,7 +22,7 @@
 
 <body>
     <article id="banner">
-        <h2>Todays high temperature will be: <span id="highTemp"></span> &deg;F</h2>
+        <h2>Todays high temperature will be: <span class="temp"></span> &deg;F</h2>
         <button type="button" id="closeBanner" aria-label="Close banner">✖️</button>
     </article>
 
@@ -168,21 +168,22 @@
             <img src="./images/couple_scooter.jpg" alt="scooter couple_scooter" width="400" height="auto"
                 loading="lazy">
         </article>
-
         <div class="weather-container">
-            <article class="weatherGroup">
-                <span>
-                    <h3>Weather Information</h3>
-                    <p>Location: Quintana Roo, Mexico</p>
-                    <p>Currently: <span id="weatherTemp">&deg;F</span> - <span id="weatherDesc"></span></p>
-                    <img id="weatherIcon" src="" alt="placeholder">
-                    <p id="humidity">%</p>
-                    <p id="forecast">&deg;F</p>
-                </span>
-            </article>
+            <section class="weather">
+                <h2> Cozumel Weather </h2>
+                <p id="temp"></p>
+                <p id="humidity"></p>
+                <p id="description"></p>
+                <img id="icon" src="default-icon.png" alt="weather icon">
+            </section>
+            <section class="forecast">
+                <h2> Next Day Forecast </h2>
+                <p id="nextdayTemp"></p>
+                <p id="nextdayHumidity"></p>
+                <p id="nextdayDescription"></p>
+                <img id="nextdayIcon" src="default-icon.png" alt="weather icon">
+            </section>
         </div>
-
-
     </main>
 
     <iframe
@@ -191,6 +192,8 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <footer>
+
+
         <div class="footer-title">
             <img src="./images/Scoots logo.jpg" alt="scoots logo" width="200" height="200" loading="lazy">
             <h2>Scoots Rentals</h2>

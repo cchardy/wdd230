@@ -195,9 +195,27 @@ main section {
     padding: 30px 70px;
 }
 
-footer section {
+.weather-container {
     display: grid;
-    grid-template: auto auto 1fr auto;
+    width: 400px;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    background-color: var(--accent5-color);
+    color: var(--text-color-header);
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+    padding: 5px 20px;
+    gap: 15px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
     grid-gap: 10px;
     margin: 0 auto;
     max-width: 100%;
@@ -884,23 +902,6 @@ fieldset label.top textarea:required:valid {
     color: var(--text-color-secondary);
 }
 
-.weather-container {
-    display: grid;
-    width: 400px;
-    justify-content: center;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    background-color: var(--accent5-color);
-    color: var(--text-color-header);
-}
-
-.weather {
-    display: flex;
-    justify-content: center;
-    margin: 0 15px;
-    padding: 5px 20px;
-    gap: 15px;
-}
 
 
 /* Pricing Table */
