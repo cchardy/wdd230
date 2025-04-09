@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Parkinsans:wght@300..800&display=swap');
+
+
 :root {
     /* Site Colors */
     --primary-color: #88DDEF;
@@ -12,11 +15,12 @@
     --text-color-header: #1e1b4b;
     --text-color-secondary: #ffffff;
 
-    --heading-font: "", sans-serif;
-    --paragraph-font: "", serif;
+    --heading-font: "Parkinsans", sans-serif;
+    --paragraph-font: "Libre Baskerville", serif;
     --success-text: #3c763d;
     --error-text: #a94442;
 }
+
 
 html,
 body {
