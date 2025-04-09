@@ -15,8 +15,8 @@
         content="Carmen Hardy student website for WDD230 Scoots Rentals - Where every ride is an adventure waiting to happen!">
     <meta property="og:image" content="https://cchardy.github.io/wdd230/scoots/images/">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -52,7 +52,162 @@
         </div>
     </header>
     <main>
+        <section class="reservations-hero">
+            <div class="overlay">
+                <h2>Reservations</h2>
+                <p>Make your reservations here!</p>
+            </div>
+        </section>
+        <section class="reservations-area">
+            <h3>Scoots Rental Reservations</h3>
+            <p>
+                Book your rental vehicle today. Simply read
+                the services agreement below
+                and complete the form to begin your adventure.
+            </p>
+            <div class="reservations-body">
+                <div class="reservations-info">
+                    <section class="agreement">
+                        <h2>Rental Services and Agreement</h2>
+                        <ul>
+                            <li>A $50 security deposit is required to confirm reservations.</li>
+                            <li>A valid drivers license is required in hand at the time of rental.</li>
+                            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                            <li>Fuel charge is not included.</li>
+                            <li>Unlimited mileage.</li>
+                            <li>Liability insurance is included.</li>
+                            <li>Damage insurance is available for purchase.</li>
+                            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                            <li>Rentals may be returned to either physical location.</li>
+                        </ul>
+                    </section>
+                    <div class="pricing">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="6" scope="colgroup">Scoots Rental Pricing</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" scope="col"></th>
+                                    <th colspan="2" scope="col">Reservation</th>
+                                    <th colspan="2" scope="col">Walk-In</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Rental Type</th>
+                                    <th scope="col">Max.<br />Persons</th>
+                                    <th scope="col">Half Day<br />(3 hrs)</th>
+                                    <th scope="col">Full Day</th>
+                                    <th scope="col">Half Day<br />(3 hrs)</th>
+                                    <th scope="col">Full Day</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <section class="reservations-fun">
+                        <h3>Let the adventure begin!</h3>
+                        <img src="./images/couple_cartoon_scooter.png" alt="Scooter couple" width="50%" height="auto"
+                            loading="lazy" />
+                    </section>
+                </div>
+                <div class="reservations-form">
+                    <form method="get" action="#">
+                        <fieldset>
+                            <legend>Vehicle Registration Information</legend>
+                            <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date"
+                                    required /></label>
+                            <label class="top">Return Date*<input type="date" id="end-date" name="end-date"
+                                    required /></label>
+                            <label class="top">Pickup Location*
+                                <select id="location" class="" name="location" required>
+                                    <option value="">Select One</option>
+                                    <option value="honda-metro">Playa del Carmen-Cozumel</option>
+                                    <option value="honda-dio">Puerta Maya</option>
+                                </select>
+                            </label>
+                            <div>Rental Length</div>
+                            <label class="rad"><input type="radio" name="period" value="half-day" required /> Half
+                                Day</label>
+                            <label class="rad"><input type="radio" name="period" value="full-day" required /> Full
+                                Day</label>
+                            <label class="top">Choose a Vehicle:
+                                <select id="vehicle" class="" name="vehicle" required>
+                                    <option value="">Select One</option>
+                                    <option value="honda-metro">Honda Metro Scooter</option>
+                                    <option value="honda-dio">Honda Dio Scooter</option>
+                                    <option value="honda-pcx">Honda PCX150 Scooter</option>
+                                    <option value="honda-atv">Honda Pioneer ATV</option>
+                                    <option value="jeep-4-door">Jeep Wrangler - 4 door a/c</option>
+                                    <option value="jeep-2-door">Jeep Wrangler - 2 door</option>
+                                </select>
+                            </label>
+                            <label class="top">Number of Riders:
+                                <select id="riders" class="" name="riders" required>
+                                    <option value="">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
+                            <label for="insurance" class="sbs"><input type="checkbox" id="insurance" name="insurance"
+                                    value="yes" /> Add Vehicle Insurance</label>
+                            <label for="agreement" class="sbs"><input type="checkbox" id="agreement" name="agreement"
+                                    value="yes" required /> I have Read the Rental
+                                Agreement</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Drivers Information</legend>
+                            <label class="top">Name* <input type="text" id="name" name="name" placeholder="Name"
+                                    required /></label>
+                            <label class="top">Mobile Phone*
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    placeholder="5559991234" required /></label>
+                            <label class="top">Email*
+                                <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
+                                    title="Please enter a valid email address" /></label>
 
+                            <label class="top">Home Country*
+                                <select id="countryDropdown" class="" name="country" required>
+                                    <option value="">Select Country</option>
+                                </select>
+                            </label>
+
+                            <label class="top">Cruise Line (optional)
+                                <select id="cruise-line" class="" name="cruise-line">
+                                    <option value="" selected>Select Cruise Line</option>
+                                    <option value="carnival">Carnival</option>
+                                    <option value="celebrity">Celebrity</option>
+                                    <option value="disney">Disney</option>
+                                    <option value="holland">Holland</option>
+                                    <option value="norwegian">Norwegian</option>
+                                    <option value="royal">Royal Caribbean</option>
+                                </select>
+                            </label>
+
+                            <label class="sbs"><input type="checkbox" name="drop-off" value="yes" /> Request Drop
+                                Off</label>
+                            <label class="top">Special Accommodations
+                                <textarea id="accommodations" name="accommodations"
+                                    placeholder="Describe special requests or accommodations here, like drop-off location ..."></textarea>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-primary" onclick="validateForm(event)">Reserve my Ride</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal" id="successModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Great!</h2>
+                    <p>Your reservation has been confirmed.</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <iframe
