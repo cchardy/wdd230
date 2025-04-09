@@ -52,7 +52,6 @@
     </header>
     <main>
         <section class="reservations-hero">
-            <img src="./images/couple3_scooter.avif" alt="couple 3 on scooter">
             <div class="overlay">
                 <h2>Reservations</h2>
                 <p>Make your reservations here!</p>
@@ -82,121 +81,117 @@
                             <li>Rentals may be returned to either physical location.</li>
                         </ul>
                     </section>
-                    <div class="pricing">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th colspan="6" scope="colgroup">Scoots Rental Pricing</th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2" scope="col"></th>
-                                    <th colspan="2" scope="col">Reservation</th>
-                                    <th colspan="2" scope="col">Walk-In</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">Rental Type</th>
-                                    <th scope="col">Max.<br />Persons</th>
-                                    <th scope="col">Half Day<br />(3 hrs)</th>
-                                    <th scope="col">Full Day</th>
-                                    <th scope="col">Half Day<br />(3 hrs)</th>
-                                    <th scope="col">Full Day</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                    <section class="reservations-fun">
-                        <h3>Let the adventure begin!</h3>
-                        <img src="./images/couple4_scooter.jpg" alt="Scooter 4 couple" width="200" height="300"
-                            loading="lazy">
-                    </section>
                 </div>
-                <div class="reservations-form">
-                    <form method="get" action="#">
-                        <fieldset>
-                            <legend>Vehicle Registration Information</legend>
-                            <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date"
-                                    required></label>
-                            <label class="top">Return Date*<input type="date" id="end-date" name="end-date"
-                                    required></label>
-                            <label class="top">Pickup Location*
-                                <select id="location" class="" name="location" required>
-                                    <option value="">Select One</option>
-                                    <option value="honda-metro">Playa del Carmen-Cozumel</option>
-                                    <option value="honda-dio">Puerta Maya</option>
-                                </select>
-                            </label>
-                            <div>Rental Length</div>
-                            <label class="rad"><input type="radio" name="period" value="half-day" required> Half
-                                Day</label>
-                            <label class="rad"><input type="radio" name="period" value="full-day" required> Full
-                                Day</label>
-                            <label class="top">Choose a Vehicle:
-                                <select id="vehicle" class="" name="vehicle" required>
-                                    <option value="">Select One</option>
-                                    <option value="honda-metro">Honda Metro Scooter</option>
-                                    <option value="honda-dio">Honda Dio Scooter</option>
-                                    <option value="honda-pcx">Honda PCX150 Scooter</option>
-                                    <option value="honda-atv">Honda Pioneer ATV</option>
-                                    <option value="jeep-4-door">Jeep Wrangler - 4 door a/c</option>
-                                    <option value="jeep-2-door">Jeep Wrangler - 2 door</option>
-                                </select>
-                            </label>
-                            <label class="top">Number of Riders:
-                                <select id="riders" class="" name="riders" required>
-                                    <option value="">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </label>
-                            <label for="insurance" class="sbs"><input type="checkbox" id="insurance" name="insurance"
-                                    value="yes"> Add Vehicle Insurance</label>
-                            <label for="agreement" class="sbs"><input type="checkbox" id="agreement" name="agreement"
-                                    value="yes" required> I have Read the Rental
-                                Agreement</label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Drivers Information</legend>
-                            <label class="top">Name* <input type="text" id="name" name="name" placeholder="Name"
-                                    required /></label>
-                            <label class="top">Mobile Phone*
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-                                    placeholder="5559991234" required /></label>
-                            <label class="top">Email*
-                                <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
-                                    title="Please enter a valid email address" /></label>
-
-                            <label class="top">Home Country*
-                                <select id="countryDropdown" class="" name="country" required>
-                                    <option value="">Select Country</option>
-                                </select>
-                            </label>
-
-                            <label class="top">Cruise Line (optional)
-                                <select id="cruise-line" class="" name="cruise-line">
-                                    <option value="" selected>Select Cruise Line</option>
-                                    <option value="carnival">Carnival</option>
-                                    <option value="celebrity">Celebrity</option>
-                                    <option value="disney">Disney</option>
-                                    <option value="holland">Holland</option>
-                                    <option value="norwegian">Norwegian</option>
-                                    <option value="royal">Royal Caribbean</option>
-                                </select>
-                            </label>
-
-                            <label class="sbs"><input type="checkbox" name="drop-off" value="yes"> Request Drop
-                                Off</label>
-                            <label class="top">Special Accommodations
-                                <textarea id="accommodations" name="accommodations"
-                                    placeholder="Special requests or accommodations, for example: drop-off location"></textarea>
-                            </label>
-                        </fieldset>
-                        <button class="btn btn-primary" onclick="validateForm(event)">Reserve my Ride</button>
-                    </form>
+                <div class="pricing">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" scope="colgroup">Scoots Rental Pricing</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2" scope="col"></th>
+                                <th colspan="2" scope="col">Reservation</th>
+                                <th colspan="2" scope="col">Walk-In</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Rental Type</th>
+                                <th scope="col">Max.<br />Persons</th>
+                                <th scope="col">Half Day<br />(3 hrs)</th>
+                                <th scope="col">Full Day</th>
+                                <th scope="col">Half Day<br />(3 hrs)</th>
+                                <th scope="col">Full Day</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
                 </div>
+                <section class="reservations-fun">
+                    <h3>Let the adventure begin!</h3>
+                    <img src="./images/couple3_scooter.png" alt="Scooter 3 couple" width="600" height="399"
+                        loading="lazy">
+                </section>
+            </div>
+            <div class="reservations-form">
+                <form method="get" action="#">
+                    <fieldset>
+                        <legend>Vehicle Registration Information</legend>
+                        <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date"
+                                required></label>
+                        <label class="top">Return Date*<input type="date" id="end-date" name="end-date"
+                                required></label>
+                        <label class="top">Pickup Location*
+                            <select id="location" class="" name="location" required>
+                                <option value="">Select One</option>
+                                <option value="honda-metro">Playa del Carmen-Cozumel</option>
+                                <option value="honda-dio">Puerta Maya</option>
+                            </select>
+                        </label>
+                        <div>Rental Length</div>
+                        <label class="rad"><input type="radio" name="period" value="half-day" required> Half Day</label>
+                        <label class="rad"><input type="radio" name="period" value="full-day" required> Full Day</label>
+                        <label class="top">Choose a Vehicle:
+                            <select id="vehicle" class="" name="vehicle" required>
+                                <option value="">Select One</option>
+                                <option value="honda-metro">Honda Metro Scooter</option>
+                                <option value="honda-dio">Honda Dio Scooter</option>
+                                <option value="honda-pcx">Honda PCX150 Scooter</option>
+                                <option value="honda-atv">Honda Pioneer ATV</option>
+                                <option value="jeep-4-door">Jeep Wrangler - 4 door</option>
+                                <option value="jeep-2-door">Jeep Wrangler - 2 door</option>
+                            </select>
+                        </label>
+                        <label class="top">Number of Riders:
+                            <select id="riders" class="" name="riders" required>
+                                <option value="">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                        <label for="insurance" class="sbs"><input type="checkbox" id="insurance" name="insurance"
+                                value="yes"> Add Vehicle Insurance</label>
+                        <label for="agreement" class="sbs"><input type="checkbox" id="agreement" name="agreement"
+                                value="yes" required> I have read the Rental Agreement</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Drivers Information</legend>
+                        <label class="top">Name* <input type="text" id="name" name="name" placeholder="Name"
+                                required></label>
+                        <label class="top">Mobile Phone*
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                placeholder="5559991234" required></label>
+                        <label class="top">Email*
+                            <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
+                                title="Please enter a valid email address"></label>
+                        <label class="top">Home Country*
+                            <select id="countryDropdown" class="" name="country" required>
+                                <option value="">Select Country</option>
+                            </select>
+                        </label>
+
+                        <label class="top">Cruise Line (optional)
+                            <select id="cruise-line" class="" name="cruise-line">
+                                <option value="" selected>Select Cruise Line</option>
+                                <option value="carnival">Carnival</option>
+                                <option value="celebrity">Celebrity</option>
+                                <option value="disney">Disney</option>
+                                <option value="holland">Holland</option>
+                                <option value="norwegian">Norwegian</option>
+                                <option value="royal">Royal Caribbean</option>
+                            </select>
+                        </label>
+
+                        <label class="sbs"><input type="checkbox" name="drop-off" value="yes"> Request Drop Off</label>
+                        <label class="top">Special Accommodations
+                            <textarea id="accommodations" name="accommodations"
+                                placeholder="Special requests or accommodations, for example: drop-off location"></textarea>
+                        </label>
+                    </fieldset>
+                    <button class="btn btn-primary" onclick="validateForm(event)">Reserve my Ride</button>
+                </form>
+            </div>
             </div>
 
             <div class="modal" id="successModal">
@@ -216,8 +211,9 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <footer>
-        <div class="footer-img">
+        <div class="footer-title">
             <img src="./images/Scoots logo.jpg" alt="scoots logo" width="200" height="200" loading="lazy">
+            <h2>Scoots Rentals</h2>
         </div>
         <div class="footer-nav">
             <h3>Quick Links</h3>

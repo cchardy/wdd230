@@ -1,117 +1,79 @@
-const urlOpenWeather = `https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.93&units=imperial&appid=f91237fb3b7de2e50a66bea388132150`;
 
-async function apiFetchOpenWeather(url) {
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.92&units=imperial&appid=f91237fb3b7de2e50a66bea388132150`
+
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.42&lon=-86.92&appid=f91237fb3b7de2e50a66bea388132150&units=imperial"
+
+let weatherTemp = document.querySelector("#weatherTemp")
+let weatherIcon = document.querySelector("#weatherIcon")
+let weatherDesc = document.querySelector("#weatherDesc")
+let humidity = document.querySelector("#humidity")
+let weatherForecast = document.querySelector("#forecast")
+let highTemp = document.querySelector("#highTemp")
+
+async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url)
         if (response.ok) {
-            const data = await response.json();
-            // console.log(data);
-            displayOneCallResults(data);
-        } else {
-            throw new Error(await response.text());
+            const data = await response.json()
+            displayResults(data)
+            console.log(data)
         }
-    } catch (error) {
-        console.error(error);
+        else {
+            throw Error(await response.text())
+        }
+    }
+    catch (error) {
+        console.log(error)
     }
 }
-apiFetchOpenWeather(urlOpenWeather);
 
-function displayOneCallResults(data) {
-    // console.log(data);
-    const results = data.daily;
-    const weatherBanner = document.querySelector(".weather-container");
-    const weather = document.createElement("div");
-    weather.classList.add("weather");
-    const weatherGroup = document.querySelector(".weatherGroup");
 
-    // Current day high temperature
-    const dailyHigh = document.querySelector(".tempHigh");
-    dailyHigh.innerHTML = Math.round(results[0].temp.max);
+function displayResults(data) {
+    weatherTemp.innerHTML = `${parseInt(data.list[0].main.temp.toFixed(0))}&deg;F`
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`
+    let desc = data.list[0].weather[0].description
+    humidity.innerHTML = `${data.list[0].main.humidity}% Humidity`
+    weatherIcon.setAttribute("src", iconsrc)
+    weatherIcon.setAttribute("alt", "Weather Icon")
+    weatherDesc.textContent = `${desc}`
+    forecast.innerHTML = `Tomorrow's Forecast: ${parseInt(data.list[1].main.temp.toFixed(0))}&deg;F`
+    highTemp.innerHTML = `Today's High Temperature: ${parseInt(data.list[0].main.temp_max.toFixed(0))}&deg;F`
+}
 
-    // Current temperature
-    const currentTemp = Math.round(data.current.temp);
-    // Current humidity
-    const currentHumidity = data.current.humidity;
-    // Current weather description
-    const currentDescription = data.current.weather[0].description;
-    // Current weather icon
-    const currentIcon = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
+apiFetch()
 
-    weather.innerHTML = `
-    <article class="weatherGroup">
-    <span>
-        <div>Currently</div>
-            <div class="temp-day">
-            <div class="tempDiv"><span><img src=${currentIcon} alt=${currentDescription}></span><span>${currentDescription}</span></div>
-            <div class="temp-group">
-                <span>${currentTemp}&deg;F</span>
-                <span>${currentHumidity}%</span>
-            </div>
-        </div>
-    </span>
-</article>
-`;
-    weatherBanner.appendChild(weather);
+// *********Forecast *************//
+fetch(forecast)
+    .then(response => response.json())
+    .then(data => {
+        // Process the data
+        const forecastDays = [];
+        for (let i = 0; i < data.list.length; i += 8) { // Get data for every 24 hours (8 intervals of 3 hours)
+            forecastDays.push(data.list[i]);
+        }
+        displayForecast(forecastDays);
+    })
+    .catch(error => console.error('Error fetching weather data:', error));
 
-    // Filter the results to get the next 5 days
-    const dailyResults = results.slice(1, 5);
+function displayForecast(forecastDays) {
+    const forecastContainer = document.getElementById('forecast');
+    forecastContainer.innerHTML = '';
 
-    dailyResults.forEach((day) => {
-        const timestamp = day.dt * 1000;
-        let weekday = dayOfTheWeek(timestamp);
+    forecastDays.forEach(dayData => {
+        const date = new Date(dayData.dt * 1000);
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const temperature = dayData.main.temp;
+        const description = dayData.weather[0].description;
 
-        // Future temperature
-        const futureTemp = Math.round(day.temp.day);
-        // Future humidity
-        const futureHumidity = day.humidity;
-        // Future weather description
-        const futureDescription = day.weather[0].description;
-        // Future weather icon
-        const futureIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
-
-        const futureDay = document.createElement("article");
-        futureDay.classList.add("weatherGroup");
-
-        futureDay.innerHTML = `
-    <span>
-        <div>${weekday}</div>
-            <div class="temp-day">
-                <div class="tempDiv"><span><img src=${futureIcon} alt=${futureDescription}></span><span>${futureDescription}</span></div>
-                <div class="temp-group">
-                        <span>${futureTemp}&deg;F</span>
-                        <span>${futureHumidity}%</span>
-                    </div>
-            </div>
-    </span>
-`;
-        weather.appendChild(futureDay);
-        weatherBanner.appendChild(weather);
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('forecast-day');
+        dayElement.innerHTML = `
+            <h4>${dayName}</h4>
+            <p>Temperature: ${temperature}&deg;F</p>
+            <p>Conditions: ${description}</p>
+            `;
+        forecastContainer.appendChild(dayElement);
     });
-}
-
-function dayOfTheWeek(timestamp) {
-    const options = {
-        weekday: "long",
-    };
-    const date = new Date(timestamp);
-    return date.toLocaleDateString("en-US", options);
-}
-
-function dateFormate(timestamp) {
-    const options = {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        hour12: false,
-        timeZone: "America/Phoenix",
-        timeZoneName: "short",
-    };
-    const date = new Date(timestamp);
-    return date.toLocaleDateString("en-US", options);
 }
 
 // ********* Weather Banner *********
