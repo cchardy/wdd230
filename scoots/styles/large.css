@@ -1,0 +1,58 @@
+@media only screen and (min-width: 992px) {
+    #nav-title {
+        font-size: 1.2em;
+    }
+
+    .nav-info input {
+        display: none;
+    }
+
+    .weather {
+        gap: 50px;
+    }
+
+    footer section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .footer-title {
+        grid-column: 1 / span 9;
+        grid-row: 1;
+    }
+
+    .address-block {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    .maps-block {
+        grid-column: 4 / span 3;
+        grid-row: 2;
+    }
+
+    .logo-block {
+        grid-column: 4 / span 3;
+        grid-row: 1/ span 2;
+    }
+
+    .social-media-block {
+        grid-column: 1 / span 6;
+        grid-row: 3;
+    }
+
+    .footer-nav {
+        grid-column: 8 / span 1;
+        grid-row: 2;
+    }
+
+    .copyright {
+        grid-column: 1 / span 9;
+        grid-row: 4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 0.7em;
+        color: var(--text-color-header);
+    }
+}
