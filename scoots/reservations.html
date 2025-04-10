@@ -54,13 +54,13 @@
         <section class="reservations-hero">
             <div class="overlay">
                 <h2>Reservations</h2>
-                <p>Make your reservations here!</p>
+                <p>Book your vehicle here!</p>
             </div>
         </section>
         <section class="reservations-area">
             <h3>Scoots Rental Reservations</h3>
             <p>
-                Book your rental vehicle today. Simply read
+                Book your rental vehicle today. Read
                 the services agreement below
                 and complete the form to begin your adventure.
             </p>
@@ -112,7 +112,7 @@
                 </section>
             </div>
             <div class="reservations-form">
-                <form method="get" action="#">
+                <form method="get" action="thanks.html">
                     <fieldset>
                         <legend>Vehicle Registration Information</legend>
                         <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date"
@@ -164,7 +164,7 @@
                                 placeholder="5559991234" required></label>
                         <label class="top">Email*
                             <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
-                                title="Please enter a valid email address"></label>
+                                title="Valid email address"></label>
                         <label class="top">Home Country*
                             <select id="countryDropdown" class="" name="country" required>
                                 <option value="">Select Country</option>
@@ -189,18 +189,9 @@
                                 placeholder="Special requests or accommodations, for example: drop-off location"></textarea>
                         </label>
                     </fieldset>
-                    <button class="btn btn-primary" onclick="validateForm(event)">Reserve my Ride</button>
+                    <button class="btn btn-primary" onclick="validateForm(event)">Reserve</button>
                 </form>
             </div>
-
-            <div class="modal" id="successModal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <h2>Great!</h2>
-                    <p>Your reservation has been confirmed.</p>
-                </div>
-            </div>
-
         </section>
     </main>
 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carmen Hardy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Rentals</title>
+    <meta name="description" content="Scoots Rentals - Where every ride is an adventure waiting to happen!">
+    <meta property="og:url" content="https://cchardy.github.io/wdd230/scoots/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scotts Rentals">
+    <meta property="og:description"
+        content="Carmen Hardy student website for WDD230 Scoots Rentals - Where every ride is an adventure waiting to happen!">
+    <meta property="og:image" content="https://cchardy.github.io/wdd230/scoots/images/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="faviconscoot.ico">
+</head>
+
+<body>
+    <article id="banner">
+        <h2>Todays high temperature will be: <span id="temp"></span></h2>
+        <button type="button" id="closeBanner" aria-label="Close banner">✖️</button>
+    </article>
+
+    <header class="nav">
+        <div class="nav-brand">
+            <img src="images/couple_cartoon_scooter.jpg" alt="company logo" width="700" height="480" loading="lazy">
+            <h1>Scoots Rentals</h1>
+        </div>
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#" title="Home">Home</a></li>
+                        <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+                        <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+                        <li><a href="contact.html" target="_blank" title="contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Great!</h2>
+        <p>Your reservation has been confirmed.</p>.
+    </main>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.744427306838!2d-86.98008460321039!3d20.475687600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1701558776863!5m2!1sen!2sus"
+        width="900" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <div class="footer-title">
+            <img src="./images/Scoots logo.jpg" alt="scoots logo" width="200" height="200" loading="lazy">
+            <h2>Scoots Rentals</h2>
+        </div>
+        <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F#" target="_blank"><img
+                    src="images/facebook.svg" alt="Facebook" width="60" height="60"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram"
+                    width="60" height="60"></a>
+            <a href=" https://x.com/i/flow/login" target="_blank"><img src="images/twitter.svg" alt="Twitter" width="60"
+                    height="60"></a>
+        </div>
+        <div class="address-block">
+            <h3>Contact</h3>
+            <div class="address">
+                <address>
+                    <div class="address-title">Scoots @ Playa del Carmen-Cozumel</div>
+                    <div class="address-group">
+                        <div class="street">
+                            <p>5 Ave N Entre Calle 2</p>
+                            <p>77600 Cozumel, Q.R. Mexico</p>
+                        </div>
+                    </div>
+
+                    <a href="tel:+525558691234" target="_self"><span class="label" aria-hidden="true"></span>
+                        <span class="value">+52 555 869 1234</span>
+                    </a>
+                </address>
+
+                <address>
+                    <div class="address-title">Scoots @ Puerta Maya</div>
+                    <div class="address-group">
+                        <div class="street">
+                            <p>5 Ave N Entre Calle 2</p>
+                            <p>77600 Cozumel, Q.R. Mexico</p>
+                        </div>
+                    </div>
+                    <a href="tel:+525559695678"><span class="value">+52 555 969 5678</span></a>
+                </address>
+            </div>
+        </div>
+        <div id="copyright">
+            <h4>Scoots</h4>
+            <p><span id="cYear"></span></p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/reservations.js"></script>
+
+</body>
+
+</html>
